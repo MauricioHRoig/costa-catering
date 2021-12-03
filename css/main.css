@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Noto+Sans+TC:wght@100&family=Playball&family=Raleway:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Noto+Sans+TC:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.contenedor-servicios{
+    display: inline-block;
+    position: relative;
+    width: 49%;
+}
+.padding-h4-services{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.services-img-scale{
+    width: 800px;
+    height: 400px;
+}
+.services-p-scale{
+    width: 800px;
+}
+.galery-img-scale{
+    width: 400px;
+    height: 400px;
+    padding-left: 5px;
+}
+.galery-h4{
+    font-size: 30px;
+    text-decoration: underline black;
+    font-family: 'Dancing Script';
+    padding: 10px 0px 20px 10px;
+}
+.promo-img-scale{
+    width: 400px;
+    height: 300px;
+}
+.promo-container{
+    display: block;
+    position: relative;
+    padding: 0px 0px 20px 50px;
+}
+.promo-container-text{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-left: 10px;
+    width: 400px;
+}
+/* Break point 320 */
+@media screen and (min-width:320px) {
+    .main-wrapper{
+        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.548), rgba(241, 216, 178, 1));
+        min-width: 320px;
+    }
+    header{
+        background-color: rgba(241, 216, 178, 1);
+        border: solid black;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        top: 0%;
+        z-index: 99;
+    }
+    .logo{
+        display: flex;
+        justify-self: center;
+    }
+    .logo a img{
+        height: 5rem;
+        padding-top: 0.5rem;
+    }
+    .titulo{
+        display: flex;
+        font-family: 'Dancing Script', cursive ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        font-size: 1.5rem;
+    }
+    .titulo h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .display-inline{
+        display: inline;
+    }
+    /* Aca deberia ir un menu hamburguesa */
+    nav{
+        display: flex;
+        margin-top: 0.5rem;
+        justify-self: stretch;
+        flex-direction: column;
+        z-index: 99;
+    }
+    nav ul{
+        display: flex;
+        padding-bottom: 0.2rem; 
+        flex-direction: column;
+    }
+    .nav-li{
+        padding: 0.25rem 0.5rem;
+        font-family: sans-serif;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    /*      Main     */
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        max-width: 17rem;
+        text-align: center;
+    }
+    h3{
+        padding: 10px 0px;
+        font-family: 'Dancing Script', cursive ;
+        font-size: 20px;
+        font-style: italic;
+        text-decoration: underline dotted black;
+        align-self: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-3-main{
+        display: flex;
+        justify-content: center;
+    }
+    /* Article container */
+    .article-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-especialidad{
+        padding: 0rem 1rem 2rem 1rem;
+    }
+    .img-especialidad{
+        width: 100%;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-especialidad{
+        font-family: 'Dancing Script';
+        font-size: 25px;
+        text-decoration: underline black;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .p-especialidad{
+        padding: 0.2rem 2rem 0rem 1rem;
+        max-width: 45rem;
+    }
+    .div-fot{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-end;
+        height: 4rem;
+
+    }
+    .li-fot{
+        padding-right: 1rem;
+    }
+    .a-fot{
+        text-decoration: none;
+    }
+    /*    Field set  */
+    .fieldset-contact{
+        display: flex;
+        justify-content: center;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .form-contact{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 10rem auto;
+        grid-template-rows: repeat(5, auto);
+        grid-row-gap: 0.5rem;
+    }
+    .fieldset-button{
+        font-size: 13px;
+        margin-left: 0.5rem;
+    }
+    .contact-imput{
+        width: 9rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 9rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Break point 375 */
+@media screen and (min-width:375px) {
+    .main-wrapper{
+        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.548), rgba(241, 216, 178, 1));
+        min-width: 320px;
+    }
+    header{
+        background-color: rgba(241, 216, 178, 1);
+        border: solid black;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        top: 0%;
+    }
+    .logo{
+        display: flex;
+        justify-self: center;
+    }
+    .logo a img{
+        height: 6rem;
+        padding: 1rem;
+    }
+    .titulo{
+        display: flex;
+        font-family: 'Dancing Script', cursive ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        font-size: 1.5rem;
+    }
+    .titulo h2{
+        font-size: 1rem;
+    }
+    .display-inline{
+        display: inline;
+    }
+    /* Aca deberia ir un menu hamburguesa */
+    nav{
+        display: flex;
+        margin-top: 0.5rem;
+        justify-self: stretch;
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        padding-bottom: 0.2rem; 
+        flex-direction: column;
+    }
+    .nav-li{
+        padding: 0.25rem 0.5rem;
+        font-family: sans-serif;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    /*      Main     */
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        max-width: 20rem;
+        text-align: center;
+    }
+    h3{
+        padding: 15px 0px;
+        font-family: 'Dancing Script', cursive ;
+        font-size: 25px;
+        font-style: italic;
+        text-decoration: underline dotted black;
+        align-self: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-3-main{
+        display: flex;
+        justify-content: center;
+    }
+    /* Article container */
+    .article-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-especialidad{
+        padding: 0rem 1rem 2rem 1rem;
+    }
+    .img-especialidad{
+        width: 100%;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-especialidad{
+        font-family: 'Dancing Script';
+        font-size: 25px;
+        text-decoration: underline black;
+        text-align: center;
+    }
+    .p-especialidad{
+        padding: 1rem 2rem 0rem 1rem;
+        max-width: 45rem;
+    }
+    .div-fot{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-end;
+        height: 4rem;
+
+    }
+    .li-fot{
+        padding-right: 1rem;
+    }
+    .a-fot{
+        text-decoration: none;
+    }
+        /*    Field set  */
+        .fieldset-contact{
+            display: flex;
+            justify-content: center;
+        }
+        .fieldset-button-box{
+            display: flex;
+            grid-column: 2;
+            justify-content: end;
+            padding: 0.5rem 0;
+        }
+        .form-contact{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 10rem auto;
+            grid-template-rows: repeat(5, auto);
+            grid-row-gap: 0.5rem;
+        }
+        .fieldset-button{
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
+        .contact-imput{
+            width: 10rem;
+        }
+        .contact-form-label{
+            padding-left: 0.5rem;
+        }
+        .contact-textarea{
+            height: 5rem;
+            width: 12rem;
+        }
+        .mapa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+}
+/* Break point 768 */
+@media screen and (min-width:768px) {
+    .main-wrapper{
+        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
+        min-width: 320px;
+    }
+    
+    header{
+        background-color: rgba(241, 216, 178, 1);
+        border: solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 8rem;
+        position: sticky;
+        top: 0%;
+    }
+    .logo{
+        grid-column: 1;
+        display: flex;
+    }
+    .logo a img{
+        height: 6rem;
+        padding: 1rem;
+    }
+    .titulo{
+        display: flex;
+        grid-column: 2;
+        font-family: 'Dancing Script', cursive ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        font-size: 2rem;
+    }
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+    /* Aca deberia ir un menu hamburguesa */
+    nav ul{
+        display: flex;
+        margin-right: 0.5rem;
+        padding-bottom: 0.2rem; 
+        flex-direction: row;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        padding: 2px;
+    }
+    .nav-li{
+        padding: 0rem 0rem ;
+    }
+    .display-inline{
+        display: inline;
+    }
+    nav{
+        grid-column: 3;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex;
+    }
+    /*      Main     */
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        max-width: 45rem;
+        text-align: left;
+    }
+    h3{
+        padding: 30px 30px;
+        font-family: 'Dancing Script', cursive ;
+        font-size: 40px;
+        font-style: italic;
+        text-decoration: underline dotted black;
+        align-self: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-3-main{
+        display: flex;
+        justify-content: center;
+    }
+    /* Article container */
+    .article-container{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+    }
+    .article-especialidad{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        padding: 0rem 0rem 2rem 1rem;
+    }
+    .img-especialidad{
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-especialidad{
+        grid-column: 2;
+        grid-row: 1;
+        padding-left: 1rem;
+        font-family: 'Dancing Script';
+        font-size: 30px;
+        text-decoration: underline black;
+        text-align: left;
+    }
+    .p-especialidad{
+        grid-column: 2;
+        grid-row: 1;
+        padding: 3rem 2rem 0rem 1rem;
+        max-width: 60rem;
+/*    Footer    */
+    }
+    .div-fot{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-end;
+        height: 4rem;
+
+    }
+    .li-fot{
+        padding-right: 1rem;
+    }
+    .a-fot{
+        text-decoration: none;
+    }
+        /*    Field set  */
+        .fieldset-contact{
+            display: flex;
+            justify-content: center;
+            margin: 0 5rem;
+        }
+        .fieldset-button-box{
+            display: flex;
+            grid-column: 2;
+            justify-content: end;
+            padding: 0.5rem 0;
+        }
+        .form-contact{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 10rem auto;
+            grid-template-rows: repeat(5, auto);
+            grid-row-gap: 0.5rem;
+        }
+        .fieldset-button{
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
+        .contact-imput{
+            width: 10rem;
+        }
+        .contact-form-label{
+            padding-left: 0.5rem;
+        }
+        .contact-textarea{
+            height: 5rem;
+            width: 26rem;
+        }
+        .mapa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+}
+/* Break point 1024 */
+@media screen and (min-width:1024px) {
+    .main-wrapper{
+        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
+        min-width: 320px;
+    }
+    
+    header{
+        background-color: rgba(241, 216, 178, 1);
+        border: solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 8rem;
+        position: sticky;
+        top: 0%;
+    }
+    .logo{
+        grid-column: 1;
+        display: flex;
+    }
+    .logo a img{
+        height: 6rem;
+        padding: 1rem;
+    }
+    .titulo{
+        display: flex;
+        grid-column: 2;
+        font-family: 'Dancing Script', cursive ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        font-size: 2rem;
+    }
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        padding: 2px;
+    }
+    .display-inline{
+        display: inline;
+    }
+    nav{
+        grid-column: 3;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex;
+    }
+    nav ul {
+        margin-right: 0.5rem;
+        padding-bottom: 0.2rem;
+        display: inline;    
+    }
+    .nav-li{
+        padding: 0rem 0rem ;
+    }
+    /*      Main     */
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        padding-top: 20px;
+        max-width: 50rem;
+        text-align: left;
+    }
+    h3{
+        padding: 30px 30px;
+        font-family: 'Dancing Script', cursive ;
+        font-size: 40px;
+        font-style: italic;
+        text-decoration: underline dotted black;
+        align-self: center;
+    }
+    .center{
+        text-align: center;
+    }
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-3-main{
+        display: flex;
+        justify-content: center;
+    }
+    /* Article container */
+    .article-container{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+    }
+    .article-especialidad{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        padding: 0rem 0rem 2rem 1rem;
+    }
+    .img-especialidad{
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-especialidad{
+        grid-column: 2;
+        grid-row: 1;
+        padding-left: 1rem;
+        font-family: 'Dancing Script';
+        font-size: 30px;
+        text-decoration: underline black;
+        text-align: left;
+    }
+    .p-especialidad{
+        grid-column: 2;
+        grid-row: 1;
+        padding: 3rem 2rem 0rem 1rem;
+        max-width: 60rem;
+
+    }
+    .div-fot{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-end;
+        height: 4rem;
+
+    }
+    .li-fot{
+        padding-right: 1rem;
+    }
+    .a-fot{
+        text-decoration: none;
+    }
+        /*    Field set  */
+    .fieldset-contact{
+        display: flex;
+        justify-content: center;
+        margin: 0 4rem;
+        padding: 0 1rem ;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .form-contact{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 10rem auto;
+        grid-template-rows: repeat(5, auto);
+        grid-row-gap: 0.5rem;
+    }
+    .fieldset-button{
+        font-size: 16px;
+        margin-left: 0.5rem;
+    }
+    .contact-imput{
+        width: 10rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 44rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Break point 1200px */
+@media screen and (min-width:1200px) {
+    .main-wrapper{
+        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
+        min-width: 320px;
+    }
+    
+    header{
+        background-color: rgba(241, 216, 178, 1);
+        border: solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 8rem;
+        position: sticky;
+        top: 0%;
+    }
+    .logo{
+        grid-column: 1;
+        display: flex;
+    }
+    .logo a img{
+        height: 6rem;
+        padding: 1rem;
+    }
+    .titulo{
+        display: flex;
+        grid-column: 2;
+        font-family: 'Dancing Script', cursive ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        font-size: 2rem;
+    }
+    .titulo h2{
+        font-size: 1.5rem;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+    }
+    .display-inline{
+        display: inline;
+    }
+    nav{
+        grid-column: 3;
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex;
+    }
+    nav ul {
+        margin-right: 1rem;
+        padding-bottom: 0.2rem;
+        display: inline;    
+    }
+    .nav-li{
+        padding: 0rem 0rem ;
+    }
+    /*      Main     */
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        padding-top: 20px;
+        max-width: 70rem;
+    }
+    h3{
+        padding: 30px 30px;
+        font-family: 'Dancing Script', cursive ;
+        font-size: 40px;
+        font-style: italic;
+        text-decoration: underline dotted black;
+        align-self: center;
+        text-align: left;
+    }
+    .center{
+        text-align: center;
+    }
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulo-3-main{
+        display: flex;
+        justify-content: center;
+    }
+    /* Article container */
+    .article-container{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+    }
+    .article-especialidad{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        padding: 0rem 0rem 2rem 1rem;
+    }
+    .img-especialidad{
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-especialidad{
+        grid-column: 2;
+        grid-row: 1;
+        padding-left: 1rem;
+        font-family: 'Dancing Script';
+        font-size: 30px;
+        text-decoration: underline black;
+        text-align: left;
+    }
+    .p-especialidad{
+        grid-column: 2;
+        grid-row: 1;
+        padding: 3rem 2rem 0rem 1rem;
+        max-width: 60rem;
+
+    }
+    .div-fot{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-end;
+        height: 4rem;
+
+    }
+    .li-fot{
+        padding-right: 1rem;
+    }
+    .a-fot{
+        text-decoration: none;
+    }
+/*    Field set  */
+    .fieldset-contact{
+        display: flex;
+        justify-content: center;
+        margin: 0 9rem;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .form-contact{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 10rem auto;
+        grid-template-rows: repeat(5, auto);
+        grid-row-gap: 0.5rem;
+    }
+    .fieldset-button{
+        font-size: 16px;
+        margin-left: 0.5rem;
+    }
+    .contact-imput{
+        width: 10rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 44rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
