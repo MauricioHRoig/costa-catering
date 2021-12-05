@@ -63,8 +63,9 @@
         z-index: 99;
     }
     .logo{
+        grid-column: 1;
         display: flex;
-        justify-self: center;
+        justify-content: center;
     }
     .logo a img{
         height: 5rem;
@@ -224,8 +225,8 @@
         top: 0%;
     }
     .logo{
+        grid-column: 1;
         display: flex;
-        justify-self: center;
     }
     .logo a img{
         height: 6rem;
@@ -330,43 +331,43 @@
     .a-fot{
         text-decoration: none;
     }
-        /*    Field set  */
-        .fieldset-contact{
-            display: flex;
-            justify-content: center;
-        }
-        .fieldset-button-box{
-            display: flex;
-            grid-column: 2;
-            justify-content: end;
-            padding: 0.5rem 0;
-        }
-        .form-contact{
-            padding-top: 20px;
-            display: grid;
-            grid-template-columns: 10rem auto;
-            grid-template-rows: repeat(5, auto);
-            grid-row-gap: 0.5rem;
-        }
-        .fieldset-button{
-            font-size: 16px;
-            margin-left: 0.5rem;
-        }
-        .contact-imput{
-            width: 10rem;
-        }
-        .contact-form-label{
-            padding-left: 0.5rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 12rem;
-        }
-        .mapa{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    /*    Field set  */
+    .fieldset-contact{            
+        display: flex;
+        justify-content: center;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .form-contact{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 10rem auto;
+        grid-template-rows: repeat(5, auto);
+        grid-row-gap: 0.5rem;
+    }
+    .fieldset-button{
+        font-size: 16px;
+        margin-left: 0.5rem;
+    }
+    .contact-imput{
+        width: 10rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 12rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 /* Break point 768 */
 @media screen and (min-width:768px) {
@@ -374,7 +375,6 @@
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
     }
-    
     header{
         background-color: rgba(241, 216, 178, 1);
         border: solid black;
@@ -501,44 +501,44 @@
     .a-fot{
         text-decoration: none;
     }
-        /*    Field set  */
-        .fieldset-contact{
-            display: flex;
-            justify-content: center;
-            margin: 0 5rem;
-        }
-        .fieldset-button-box{
-            display: flex;
-            grid-column: 2;
-            justify-content: end;
-            padding: 0.5rem 0;
-        }
-        .form-contact{
-            padding-top: 20px;
-            display: grid;
-            grid-template-columns: 10rem auto;
-            grid-template-rows: repeat(5, auto);
-            grid-row-gap: 0.5rem;
-        }
-        .fieldset-button{
-            font-size: 16px;
-            margin-left: 0.5rem;
-        }
-        .contact-imput{
-            width: 10rem;
-        }
-        .contact-form-label{
-            padding-left: 0.5rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 26rem;
-        }
-        .mapa{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    /*    Field set  */
+    .fieldset-contact{
+        display: flex;
+        justify-content: center;
+        margin: 0 5rem;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .form-contact{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 10rem auto;
+        grid-template-rows: repeat(5, auto);
+        grid-row-gap: 0.5rem;
+    }
+    .fieldset-button{
+        font-size: 16px;
+        margin-left: 0.5rem;
+    }
+    .contact-imput{
+        width: 10rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 26rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 /* Break point 1024 */
 @media screen and (min-width:1024px) {
@@ -546,7 +546,6 @@
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
     }
-    
     header{
         background-color: rgba(241, 216, 178, 1);
         border: solid black;
@@ -718,7 +717,6 @@
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
     }
-    
     header{
         background-color: rgba(241, 216, 178, 1);
         border: solid black;
