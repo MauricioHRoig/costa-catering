@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="imagenes/icono.png">
+  <!-- link boostrap -->
+  <link rel="stylesheet" href="boostrap/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Inicio | Costa</title>
 </head>
@@ -21,12 +23,29 @@
         <h2>Servicio de catering</h2>
       </div>
       <nav>
-        <ul class="nav-ul">
-          <li class="display-inline nav-li"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="display-inline nav-li"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
-          <li class="display-inline nav-li"><a class="nav-link" href="paginas/servicios.html">Servicios</a></li>
-          <li class="display-inline nav-li"><a class="nav-link" href="paginas/galeria.html">Galeria</a></li>
-          <li class="display-inline nav-li"><a class="nav-link" href="paginas/promociones.html">Promociones</a></li>
+        <!-- <ul class="nav-ul">
+          <li class="display-inline nav-li"><a class="nav-a" href="index.html">Inicio</a></li>
+          <li class="display-inline nav-li"><a class="nav-a" href="paginas/contacto.html">Contacto</a></li>
+          <li class="display-inline nav-li"><a class="nav-a" href="paginas/servicios.html">Servicios</a></li>
+          <li class="display-inline nav-li"><a class="nav-a" href="paginas/galeria.html">Galeria</a></li>
+          <li class="display-inline nav-li"><a class="nav-a" href="paginas/promociones.html">Promociones</a></li>
+        </ul> -->
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/promociones.html">Promociones</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -39,6 +58,7 @@
         doloremque similique unde porro earum sit iusto reprehenderit reiciendis dolore dolores pariatur saepe
         totam quia inventore nam, sunt mollitia quasi dolorem?</p>
     </section>
+    <!-- 
     <section class="article-container">
       <h3 class="titulo-3-main">Nuestas especialidades</h3>
       <article class="article-especialidad">
@@ -60,6 +80,40 @@
           obcaecati esse pariatur magni asperiores rerum velit distinctio odit exercitationem hic quo eum
           molestias mollitia laboriosam natus, quisquam voluptatum? Aliquam ea deleniti iusto illum sint, vel,
           eveniet voluptas animi harum non eos! Sed est accusantium iure?</p>
+      </article>
+    </section> -->
+    <section class="container">
+      <article>
+        <div class="row padding-top-2rem">
+          <div class="col d-flex justify-center">
+            <img class="img-especialidad" src="imagenes/especialidadMesaSalada.png" alt="mesa-salada">
+          </div>
+          <div class="col">
+            <h4 class="header-especialidad">Mesas saladas</h4>
+            <p class="p-style p-especialidad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+              iure aspernatur commodi ipsa ad quidem hic ipsum? Nihil eveniet assumenda accusantium eius sunt
+              temporibus, impedit vero eum dicta blanditiis praesentium at laudantium ipsam, illo recusandae autem
+              optio? Natus, laborum repellat obcaecati, architecto sequi accusamus voluptate delectus omnis
+              quibusdam dolores ullam doloremque tempore repellendus rerum magni deleniti maiores nobis! Eius, sit
+              tempora? Quibusdam mollitia praesentium sequi distinctio fugit hic? Porro, minima?</p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="row padding-top-2rem">
+          <div class="col d-flex justify-center">
+            <img class="img-especialidad" src="imagenes/especialidadMesaVinos.png" alt="mesa-vinos">
+          </div>
+          <div class="col">
+            <h4 class="header-especialidad">Mesas de vinos</h4>
+            <p class="p-style p-especialidad">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi veniam
+              corrupti dolores. In suscipit soluta eius ullam at nemo explicabo modi reiciendis perspiciatis
+              sequi. Optio porro repudiandae doloremque assumenda explicabo rem, reiciendis accusantium facilis
+              obcaecati esse pariatur magni asperiores rerum velit distinctio odit exercitationem hic quo eum
+              molestias mollitia laboriosam natus, quisquam voluptatum? Aliquam ea deleniti iusto illum sint, vel,
+              eveniet voluptas animi harum non eos! Sed est accusantium iure?</p>
+          </div>
+        </div>
       </article>
     </section>
     <footer>
@@ -89,6 +143,7 @@
       </div>
     </footer>
   </div>
+  <script src="./js/bootstrap.js"></script>
 </body>
 
 </html>

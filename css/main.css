@@ -95,7 +95,6 @@
     /* Aca deberia ir un menu hamburguesa */
     nav{
         display: flex;
-        margin-top: 0.5rem;
         justify-self: stretch;
         flex-direction: column;
         z-index: 99;
@@ -263,7 +262,6 @@
     /* Aca deberia ir un menu hamburguesa */
     nav{
         display: flex;
-        margin-top: 0.5rem;
         justify-self: stretch;
         flex-direction: column;
     }
@@ -781,7 +779,7 @@
     .titulo h2{
         font-size: 1.5rem;
     }
-    .nav-link{
+    .nav-a{
         color: black;
         text-decoration: none;
         padding: 5px;
@@ -795,6 +793,11 @@
         align-items: flex-end;
         display: flex;
     }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+    }
     nav ul {
         margin-right: 1rem; 
         display: flex;    
@@ -806,7 +809,7 @@
     /*      Main     */
     .p-style{
         font-family: 'Raleway', sans-serif;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         max-width: 70rem;
     }
     h3{
@@ -843,31 +846,25 @@
     .img-especialidad{
         width: 300px;
         height: 300px;
-        justify-self: center;
         border: solid black;
     }
+    .justify-center{
+        justify-content: center;
+    }
     .header-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding-left: 1rem;
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
         text-align: left;
     }
     .p-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding: 3rem 2rem 0rem 1rem;
         max-width: 60rem;
-
     }
     .div-fot{
         display: flex;
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
