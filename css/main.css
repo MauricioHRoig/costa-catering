@@ -113,6 +113,12 @@
         font-size: 15px;
     }
     /*      Main     */
+    .width{
+        width: auto;
+    }
+    .column-mob{
+        flex-direction: column;
+    }
     .p-style{
         font-family: 'Raleway', sans-serif;
         max-width: 17rem;
@@ -159,7 +165,7 @@
         padding-top: 0.5rem;
     }
     .p-especialidad{
-        padding: 0.2rem 2rem 0rem 1rem;
+        padding-top: 1rem;
         max-width: 45rem;
     }
     .div-fot{
@@ -167,7 +173,6 @@
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -281,7 +286,7 @@
     /*      Main     */
     .p-style{
         font-family: 'Raleway', sans-serif;
-        max-width: 20rem;
+        max-width: 25rem;
         text-align: center;
     }
     h3{
@@ -323,16 +328,12 @@
         text-decoration: underline black;
         text-align: center;
     }
-    .p-especialidad{
-        padding: 1rem 2rem 0rem 1rem;
-        max-width: 45rem;
-    }
+    /*      Footer       */
     .div-fot{
         display: flex;
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -428,6 +429,7 @@
         display: flex;
         margin-right: 0.5rem;
         flex-direction: row;
+        flex-wrap: nowrap !important;
     }
     .nav-link{
         color: black;
@@ -453,7 +455,7 @@
         text-align: left;
     }
     h3{
-        padding: 30px 30px;
+        padding: 1rem 0rem;
         font-family: 'Dancing Script', cursive ;
         font-size: 40px;
         font-style: italic;
@@ -489,18 +491,13 @@
         border: solid black;
     }
     .header-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding-left: 1rem;
+        padding-top: 1rem;
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
-        text-align: left;
     }
     .p-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding: 3rem 2rem 0rem 1rem;
+        padding: 1rem 2rem 0rem 0rem;
         max-width: 60rem;
 /*    Footer    */
     }
@@ -567,6 +564,7 @@
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
     }
+    /*      Header    */
     header{
         background-color: rgba(241, 216, 178, 1);
         border: solid black;
@@ -623,6 +621,12 @@
         padding: 0rem 0rem ;
     }
     /*      Main     */
+    .width{
+        width: 100%s;
+    }
+    .row-desk{
+        flex-direction: row;
+    }
     .p-style{
         font-family: 'Raleway', sans-serif;
         padding-top: 20px;
@@ -630,7 +634,7 @@
         text-align: left;
     }
     h3{
-        padding: 30px 30px;
+        padding: 1rem 0rem;
         font-family: 'Dancing Script', cursive ;
         font-size: 40px;
         font-style: italic;
@@ -666,27 +670,22 @@
         border: solid black;
     }
     .header-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding-left: 1rem;
+        padding: 0rem;
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
         text-align: left;
     }
     .p-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding: 3rem 2rem 0rem 1rem;
+        padding: 2rem 2rem 0rem 0rem;
         max-width: 60rem;
-
     }
+    /*      Footer       */
     .div-fot{
         display: flex;
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -809,11 +808,11 @@
     /*      Main     */
     .p-style{
         font-family: 'Raleway', sans-serif;
-        /* padding-top: 20px; */
+        padding-top: 20px;
         max-width: 70rem;
     }
     h3{
-        padding: 30px 30px;
+        padding: 1rem 0rem;
         font-family: 'Dancing Script', cursive ;
         font-size: 40px;
         font-style: italic;
@@ -828,10 +827,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .titulo-3-main{
-        display: flex;
-        justify-content: center;
     }
     /* Article container */
     .article-container{
@@ -848,17 +843,12 @@
         height: 300px;
         border: solid black;
     }
-    .justify-center{
-        justify-content: center;
-    }
     .header-especialidad{
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
         text-align: left;
-    }
-    .p-especialidad{
-        max-width: 60rem;
+        padding: 0rem;
     }
     .div-fot{
         display: flex;
