@@ -58,9 +58,9 @@
         background-color: rgba(241, 216, 178, 1);
         border: solid black;
         display: grid;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
+        position: sticky;
         top: 0%;
-        z-index: 99;
     }
     .logo{
         grid-column: 1;
@@ -86,7 +86,7 @@
         font-size: 1.5rem;
     }
     .titulo h2{
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-align: center;
     }
     .display-inline{
@@ -95,7 +95,6 @@
     /* Aca deberia ir un menu hamburguesa */
     nav{
         display: flex;
-        margin-top: 0.5rem;
         justify-self: stretch;
         flex-direction: column;
         z-index: 99;
@@ -114,6 +113,12 @@
         font-size: 15px;
     }
     /*      Main     */
+    .width{
+        width: auto;
+    }
+    .column-mob{
+        flex-direction: column;
+    }
     .p-style{
         font-family: 'Raleway', sans-serif;
         max-width: 17rem;
@@ -160,7 +165,7 @@
         padding-top: 0.5rem;
     }
     .p-especialidad{
-        padding: 0.2rem 2rem 0rem 1rem;
+        padding-top: 1rem;
         max-width: 45rem;
     }
     .div-fot{
@@ -168,7 +173,6 @@
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -180,6 +184,7 @@
     .fieldset-contact{
         display: flex;
         justify-content: center;
+        border: double;
     }
     .fieldset-button-box{
         display: flex;
@@ -187,16 +192,12 @@
         justify-content: end;
         padding: 0.5rem 0;
     }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
-    }
     .fieldset-button{
         font-size: 13px;
         margin-left: 0.5rem;
+    }
+    .form-contact{
+        width: 80%;
     }
     .contact-imput{
         width: 9rem;
@@ -224,13 +225,6 @@
     .main-wrapper{
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.548), rgba(241, 216, 178, 1));
         min-width: 320px;
-    }
-    header{
-        background-color: rgba(241, 216, 178, 1);
-        border: solid black;
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        top: 0%;
     }
     .logo{
         grid-column: 1;
@@ -263,7 +257,6 @@
     /* Aca deberia ir un menu hamburguesa */
     nav{
         display: flex;
-        margin-top: 0.5rem;
         justify-self: stretch;
         flex-direction: column;
     }
@@ -283,7 +276,7 @@
     /*      Main     */
     .p-style{
         font-family: 'Raleway', sans-serif;
-        max-width: 20rem;
+        max-width: 25rem;
         text-align: center;
     }
     h3{
@@ -325,16 +318,12 @@
         text-decoration: underline black;
         text-align: center;
     }
-    .p-especialidad{
-        padding: 1rem 2rem 0rem 1rem;
-        max-width: 45rem;
-    }
+    /*      Footer       */
     .div-fot{
         display: flex;
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -352,13 +341,6 @@
         grid-column: 2;
         justify-content: end;
         padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
     }
     .fieldset-button{
         font-size: 16px;
@@ -430,6 +412,7 @@
         display: flex;
         margin-right: 0.5rem;
         flex-direction: row;
+        flex-wrap: nowrap !important;
     }
     .nav-link{
         color: black;
@@ -444,8 +427,6 @@
     }
     nav{
         grid-column: 3;
-        justify-content: flex-end;
-        align-items: flex-end;
         display: flex;
     }
     /*      Main     */
@@ -455,7 +436,7 @@
         text-align: left;
     }
     h3{
-        padding: 30px 30px;
+        padding: 1rem 0rem;
         font-family: 'Dancing Script', cursive ;
         font-size: 40px;
         font-style: italic;
@@ -491,18 +472,13 @@
         border: solid black;
     }
     .header-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding-left: 1rem;
+        padding-top: 1rem;
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
-        text-align: left;
     }
     .p-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding: 3rem 2rem 0rem 1rem;
+        padding: 1rem 2rem 0rem 0rem;
         max-width: 60rem;
 /*    Footer    */
     }
@@ -530,13 +506,6 @@
         grid-column: 2;
         justify-content: end;
         padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
     }
     .fieldset-button{
         font-size: 16px;
@@ -569,6 +538,7 @@
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
     }
+    /*      Header    */
     header{
         background-color: rgba(241, 216, 178, 1);
         border: solid black;
@@ -625,6 +595,12 @@
         padding: 0rem 0rem ;
     }
     /*      Main     */
+    .width{
+        width: 100%s;
+    }
+    .row-desk{
+        flex-direction: row;
+    }
     .p-style{
         font-family: 'Raleway', sans-serif;
         padding-top: 20px;
@@ -632,7 +608,7 @@
         text-align: left;
     }
     h3{
-        padding: 30px 30px;
+        padding: 1rem 0rem;
         font-family: 'Dancing Script', cursive ;
         font-size: 40px;
         font-style: italic;
@@ -668,27 +644,22 @@
         border: solid black;
     }
     .header-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding-left: 1rem;
+        padding: 0rem;
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
         text-align: left;
     }
     .p-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding: 3rem 2rem 0rem 1rem;
+        padding: 2rem 2rem 0rem 0rem;
         max-width: 60rem;
-
     }
+    /*      Footer       */
     .div-fot{
         display: flex;
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -708,13 +679,6 @@
         grid-column: 2;
         justify-content: end;
         padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
     }
     .fieldset-button{
         font-size: 16px;
@@ -781,7 +745,7 @@
     .titulo h2{
         font-size: 1.5rem;
     }
-    .nav-link{
+    .nav-a{
         color: black;
         text-decoration: none;
         padding: 5px;
@@ -794,6 +758,11 @@
         justify-content: flex-end;
         align-items: flex-end;
         display: flex;
+    }
+    .nav-link{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
     }
     nav ul {
         margin-right: 1rem; 
@@ -810,7 +779,7 @@
         max-width: 70rem;
     }
     h3{
-        padding: 30px 30px;
+        padding: 1rem 0rem;
         font-family: 'Dancing Script', cursive ;
         font-size: 40px;
         font-style: italic;
@@ -826,10 +795,6 @@
         flex-direction: column;
         align-items: center;
     }
-    .titulo-3-main{
-        display: flex;
-        justify-content: center;
-    }
     /* Article container */
     .article-container{
         display: grid;
@@ -843,31 +808,20 @@
     .img-especialidad{
         width: 300px;
         height: 300px;
-        justify-self: center;
         border: solid black;
     }
     .header-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding-left: 1rem;
         font-family: 'Dancing Script';
         font-size: 30px;
         text-decoration: underline black;
         text-align: left;
-    }
-    .p-especialidad{
-        grid-column: 2;
-        grid-row: 1;
-        padding: 3rem 2rem 0rem 1rem;
-        max-width: 60rem;
-
+        padding: 0rem;
     }
     .div-fot{
         display: flex;
         justify-content: flex-end; 
         align-items: flex-end;
         height: 4rem;
-
     }
     .li-fot{
         padding-right: 1rem;
@@ -876,38 +830,6 @@
         text-decoration: none;
     }
 /*    Field set  */
-    .fieldset-contact{
-        display: flex;
-        justify-content: center;
-        margin: 0 9rem;
-    }
-    .fieldset-button-box{
-        display: flex;
-        grid-column: 2;
-        justify-content: end;
-        padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
-    }
-    .fieldset-button{
-        font-size: 16px;
-        margin-left: 0.5rem;
-    }
-    .contact-imput{
-        width: 10rem;
-    }
-    .contact-form-label{
-        padding-left: 0.5rem;
-    }
-    .contact-textarea{
-        height: 5rem;
-        width: 44rem;
-    }
     .mapa{
         display: flex;
         flex-direction: column;
