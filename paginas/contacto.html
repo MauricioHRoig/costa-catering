@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/icono.png">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="../boostrap/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>Contacto | Costa</title>
 </head>
@@ -21,17 +23,37 @@
                 <h2>Servicio de catering</h2>
             </div>
             <nav>
-                <ul class="nav-ul">
-                    <li class="display-inline nav-li"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="display-inline nav-li"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    <li class="display-inline nav-li"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="display-inline nav-li"><a class="nav-link" href="galeria.html">Galeria</a></li>
-                    <li class="display-inline nav-li"><a class="nav-link" href="promociones.html">Promociones</a></li>
-                </ul>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="galeria.html">Galeria</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="promociones.html">Promociones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </nav>
         </header>
         <h3 class="center">Contacto</h3>
-        <fieldset class="fieldset-contact">
+        <!-- <fieldset class="fieldset-contact">
             <legend>Contactenos</legend>
             <form class="form-contact">
                 <label class="contact-form-label" for="nombre">Nombre</label>
@@ -45,6 +67,41 @@
                 <div class="fieldset-button-box" id="fieldset-button-position">
                     <input class="fieldset-button" type="submit" value="Enviar consulta">
                     <input class="fieldset-button" type="reset" value="Borrar">
+                </div>
+            </form>
+        </fieldset> -->
+        <fieldset class="fieldset-contact">
+            <legend>Contactenos</legend>
+            <form class="">
+                <div class="row">
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" placeholder="Nombre" aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" placeholder="Apellido"
+                            aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="form-control form-control-sm" type="text" placeholder="Correo Electronico"
+                            aria-label=".form-control-sm example">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <textarea class="form-control form-control-sm contact-textarea" type="text" placeholder="Consulta"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="fieldset-button-box" id="fieldset-button-position">
+                            <input class="fieldset-button" type="submit" value="Enviar consulta">
+                            <input class="fieldset-button" type="reset" value="Borrar">
+                        </div>
+                    </div>
                 </div>
             </form>
         </fieldset>
@@ -83,6 +140,7 @@
             </div>
         </footer>
     </div>
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

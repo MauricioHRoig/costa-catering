@@ -854,38 +854,6 @@
         text-decoration: none;
     }
 /*    Field set  */
-    .fieldset-contact{
-        display: flex;
-        justify-content: center;
-        margin: 0 9rem;
-    }
-    .fieldset-button-box{
-        display: flex;
-        grid-column: 2;
-        justify-content: end;
-        padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
-    }
-    .fieldset-button{
-        font-size: 16px;
-        margin-left: 0.5rem;
-    }
-    .contact-imput{
-        width: 10rem;
-    }
-    .contact-form-label{
-        padding-left: 0.5rem;
-    }
-    .contact-textarea{
-        height: 5rem;
-        width: 44rem;
-    }
     .mapa{
         display: flex;
         flex-direction: column;
