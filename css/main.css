@@ -184,6 +184,7 @@
     .fieldset-contact{
         display: flex;
         justify-content: center;
+        border: double;
     }
     .fieldset-button-box{
         display: flex;
@@ -191,16 +192,12 @@
         justify-content: end;
         padding: 0.5rem 0;
     }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
-    }
     .fieldset-button{
         font-size: 13px;
         margin-left: 0.5rem;
+    }
+    .form-contact{
+        width: 80%;
     }
     .contact-imput{
         width: 9rem;
@@ -344,13 +341,6 @@
         grid-column: 2;
         justify-content: end;
         padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
     }
     .fieldset-button{
         font-size: 16px;
@@ -516,13 +506,6 @@
         grid-column: 2;
         justify-content: end;
         padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
     }
     .fieldset-button{
         font-size: 16px;
@@ -696,13 +679,6 @@
         grid-column: 2;
         justify-content: end;
         padding: 0.5rem 0;
-    }
-    .form-contact{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 10rem auto;
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 0.5rem;
     }
     .fieldset-button{
         font-size: 16px;

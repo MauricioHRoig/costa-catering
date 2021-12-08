@@ -72,10 +72,11 @@
         </fieldset> -->
         <fieldset class="fieldset-contact">
             <legend>Contactenos</legend>
-            <form class="">
+            <form class="form-contact">
                 <div class="row">
                     <div class="col">
-                        <input class="form-control form-control-sm" type="text" placeholder="Nombre" aria-label=".form-control-sm example">
+                        <input class="form-control form-control-sm" type="text" placeholder="Nombre" aria-label=".form-control-sm example"
+                            required>
                     </div>
                 </div>
                 <div class="row">
@@ -86,20 +87,20 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input class="form-control form-control-sm" type="text" placeholder="Correo Electronico"
-                            aria-label=".form-control-sm example">
+                        <input class="form-control form-control-sm" type="email" placeholder="Correo Electronico"
+                            aria-label=".form-control-sm example" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <textarea class="form-control form-control-sm contact-textarea" type="text" placeholder="Consulta"></textarea>
+                        <textarea class="form-control form-control-sm" type="text" placeholder="Consulta"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="fieldset-button-box" id="fieldset-button-position">
-                            <input class="fieldset-button" type="submit" value="Enviar consulta">
-                            <input class="fieldset-button" type="reset" value="Borrar">
+                            <input class="btn btn-primary btn-sm fieldset-button" type="submit" value="Enviar consulta">
+                            <input class="btn btn-primary btn-sm fieldset-button" type="reset" value="Borrar">
                         </div>
                     </div>
                 </div>

@@ -343,7 +343,6 @@ fieldset {
 }
 
 legend {
-  width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
   font-size: calc(1.275rem + 0.3vw);
@@ -2954,14 +2953,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: #000;
+    background-color: #f1d8b2;
+    border-color: #0c080787;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  color: #fffefe;
+  background-color: #cbac67;
+  border-color: #c7b278;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
