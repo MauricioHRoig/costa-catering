@@ -92,16 +92,16 @@
     .display-inline{
         display: inline;
     }
-    /* Aca deberia ir un menu hamburguesa */
+    /*       Nav       */
     nav{
         display: flex;
-        justify-self: stretch;
-        flex-direction: column;
         z-index: 99;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 0.3rem 0.3rem 0;
     }
     nav ul{
         display: flex;
-        flex-direction: column;
     }
     .nav-li{
         padding: 0.25rem 0.5rem;
@@ -111,6 +111,21 @@
         color: black;
         text-decoration: none;
         font-size: 15px;
+    }
+    .dropdown-menu {
+        background-color: rgb(241, 216, 178);
+    }
+    .dropdown-menu[data-bs-popper] {
+        top: 70%;
+        right: 0rem;
+        left: auto;    
+    }
+    .header-button {
+        background-color: transparent;
+        border:none;
+    }
+    .header-button::after{
+        content: none !important
     }
     /*      Main     */
     .width{
@@ -257,12 +272,6 @@
     /* Aca deberia ir un menu hamburguesa */
     nav{
         display: flex;
-        justify-self: stretch;
-        flex-direction: column;
-    }
-    nav ul{
-        display: flex;
-        flex-direction: column;
     }
     .nav-li{
         padding: 0.25rem 0.5rem;
@@ -373,14 +382,6 @@
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
     }
-    header{
-        background-color: rgba(241, 216, 178, 1);
-        border: solid black;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        position: sticky;
-        top: 0%;
-    }
     .logo{
         grid-column: 1;
         display: flex;
@@ -407,13 +408,7 @@
     .titulo h2{
         font-size: 1.5rem;
     }
-    /* Aca deberia ir un menu hamburguesa */
-    nav ul{
-        display: flex;
-        margin-right: 0.5rem;
-        flex-direction: row;
-        flex-wrap: nowrap !important;
-    }
+    /* nav */
     .nav-link{
         color: black;
         text-decoration: none;
@@ -428,6 +423,10 @@
     nav{
         grid-column: 3;
         display: flex;
+    }
+    .header-button {
+        background-color: transparent;
+        border:none;
     }
     /*      Main     */
     .p-style{
@@ -539,14 +538,6 @@
         min-width: 320px;
     }
     /*      Header    */
-    header{
-        background-color: rgba(241, 216, 178, 1);
-        border: solid black;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        position: sticky;
-        top: 0%;
-    }
     .logo{
         grid-column: 1;
         display: flex;
@@ -581,22 +572,34 @@
     .display-inline{
         display: inline;
     }
+    /*      Nav      */
     nav{
         grid-column: 3;
         justify-content: flex-end;
         align-items: flex-end;
         display: flex;
+        padding: 0;
     }
-    nav ul {
-        margin-right: 0.5rem;
-        display: inline;    
+    nav ul{
+        display: flex !important;
+        margin-right: 0.5rem !important;
+        flex-direction: row;
+        flex-wrap: nowrap !important;
     }
     .nav-li{
         padding: 0rem 0rem ;
     }
+    .dropdown-menu {
+        position: static;
+        border: none;
+        padding: 0rem;
+    }
+    .navbar-toggler-icon {
+        display: none;
+    }
     /*      Main     */
     .width{
-        width: 100%s;
+        width: 100%;
     }
     .row-desk{
         flex-direction: row;
@@ -710,14 +713,6 @@
     .main-wrapper{
         background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
         min-width: 320px;
-    }
-    header{
-        background-color: rgba(241, 216, 178, 1);
-        border: solid black;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        position: sticky;
-        top: 0%;
     }
     .logo{
         grid-column: 1;
