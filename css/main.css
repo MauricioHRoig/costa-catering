@@ -10,17 +10,6 @@
     position: relative;
     width: 49%;
 }
-.galery-img-scale{
-    width: 400px;
-    height: 400px;
-    padding-left: 5px;
-}
-.galery-h4{
-    font-size: 30px;
-    text-decoration: underline black;
-    font-family: 'Dancing Script';
-    padding: 10px 0px 20px 10px;
-}
 .promo-img-scale{
     width: 400px;
     height: 300px;
@@ -50,6 +39,7 @@
         grid-template-columns: repeat(3, 1fr);
         position: sticky;
         top: 0%;
+        z-index: 99;
     }
     .logo{
         grid-column: 1;
@@ -84,7 +74,6 @@
     /*       Nav       */
     nav{
         display: flex;
-        z-index: 99;
         justify-content: flex-end;
         align-items: flex-end;
         padding: 0 0.3rem 0.3rem 0;
@@ -240,6 +229,23 @@
         margin: 0;
         padding-top: 1rem;
     }
+     /*      Galeria      */
+     .carousel-width{
+         width: 15rem;
+     }
+     .galery-img-scale {
+        width: 15rem;
+        height: 15rem;
+        padding-left: 5px;
+    }
+    .flex-column-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-col{
+        flex-direction: column;
+    }
 }
 /* Break point 375 */
 @media screen and (min-width:375px) {
@@ -377,6 +383,16 @@
     .p-servicios {
         text-align: center; 
         margin: 0 2rem;;
+    }
+    /*      Galeria      */
+    .galery-img-scale {
+        width: 20rem;
+        height: 20rem;
+        padding-left: 5px;
+    }
+    /*      Galeria      */
+    .carousel-width {
+        width: 20rem;
     }
 }
 /* Break point 768 */
@@ -532,6 +548,15 @@
     /*      Servicios        */
     .p-servicios {
         margin: 0 5rem;;
+    }
+    /*      Galeria      */
+    .carousel-width {
+        width: 21rem;
+    }
+    .galery-img-scale{
+        width: 21rem;
+        height: 21rem;
+        padding-left: 5px;
     }
 }
 /* Break point 1024 */
@@ -709,6 +734,22 @@
     .p-servicios {
         margin: 0 3rem;;
     }
+    /*      Galeria      */
+    .carousel-width {
+        width: 25rem;
+    }
+    .galery-img-scale{
+        width: 25rem;
+        height: 25rem;
+        padding-left: 5px;
+    }
+    .d-block-row{
+        display: block;
+        flex-direction: row;
+    }
+    .f-row{
+        flex-direction: row;
+    }
 }
 /* Break point 1200px */
 @media screen and (min-width:1200px) {
@@ -835,5 +876,9 @@
     }
     nav ul li:hover{
         border-bottom: 2px solid black;
+    }
+    /*      Galeria       */
+    .carousel-width{
+        width: 25rem;
     }
 }
