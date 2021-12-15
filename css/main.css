@@ -5,23 +5,6 @@
     padding: 0;
     font-size: 16px;
 }
-.contenedor-servicios{
-    display: inline-block;
-    position: relative;
-    width: 49%;
-}
-.promo-container{
-    display: block;
-    position: relative;
-    padding: 0px 0px 20px 50px;
-}
-.promo-container-text{
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    padding-left: 10px;
-    width: 400px;
-}
 /* Break point 320 */
 @media screen and (min-width:320px) {
     .main-wrapper{
@@ -73,13 +56,10 @@
         justify-content: flex-end;
         align-items: flex-end;
         padding: 0 0.3rem 0.3rem 0;
+        grid-column: 3;
     }
     nav ul{
         display: flex;
-    }
-    .nav-li{
-        padding: 0.25rem 0.5rem;
-        font-family: sans-serif;
     }
     .nav-link{
         color: black;
@@ -268,50 +248,12 @@
 }
 /* Break point 375 */
 @media screen and (min-width:375px) {
-    .main-wrapper{
-        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.548), rgba(241, 216, 178, 1));
-        min-width: 320px;
-    }
-    .logo{
-        grid-column: 1;
-        display: flex;
-    }
     .logo a img{
         height: 6rem;
         padding: 1rem;
-        animation-name: girar;
-        animation-duration: 5s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-    }
-    .titulo{
-        display: flex;
-        font-family: 'Dancing Script', cursive ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .titulo h1{
-        font-size: 1.5rem;
     }
     .titulo h2{
         font-size: 1rem;
-    }
-    .display-inline{
-        display: inline;
-    }
-    /* Aca deberia ir un menu hamburguesa */
-    nav{
-        display: flex;
-    }
-    .nav-li{
-        padding: 0.25rem 0.5rem;
-        font-family: sans-serif;
-    }
-    .nav-link{
-        color: black;
-        text-decoration: none;
-        font-size: 15px;
     }
     /*      Main     */
     .p-style{
@@ -319,97 +261,28 @@
     }
     h3{
         padding: 15px 0px;
-        font-family: 'Dancing Script', cursive ;
         font-size: 25px;
-        font-style: italic;
-        text-decoration: underline dotted black;
-        align-self: center;
-    }
-    .center{
-        text-align: center;
-    }
-    .nosotros-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .titulo-3-main{
-        display: flex;
-        justify-content: center;
-    }
-    /* Article container */
-    .article-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .article-especialidad{
-        padding: 0rem 1rem 2rem 1rem;
-    }
-    .img-especialidad{
-        width: 100%;
-        justify-self: center;
-        border: solid black;
-    }
-    /*      Footer       */
-    .div-fot{
-        display: flex;
-        justify-content: flex-end; 
-        align-items: flex-end;
-        height: 4rem;
-    }
-    .li-fot{
-        padding-right: 1rem;
-    }
-    .a-fot{
-        text-decoration: none;
     }
     /*    Field set  */
-    .fieldset-contact{            
-        display: flex;
-        justify-content: center;
-    }
-    .fieldset-button-box{
-        display: flex;
-        grid-column: 2;
-        justify-content: end;
-        padding: 0.5rem 0;
-    }
     .fieldset-button{
         font-size: 16px;
-        margin-left: 0.5rem;
     }
     .contact-imput{
         width: 10rem;
-    }
-    .contact-form-label{
-        padding-left: 0.5rem;
     }
     .contact-textarea{
         height: 5rem;
         width: 12rem;
     }
-    .mapa{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    @keyframes girar {
-        100%{
-            transform: rotateY(360deg);
-        }        
-    }
     /*      Servicios       */
     .p-servicios {
-        text-align: center; 
         margin: 0 2rem;;
     }
     /*      Galeria      */
     .galery-img-scale {
         width: 20rem;
         height: 20rem;
-        padding-left: 5px;
     }
-    /*      Galeria      */
     .carousel-width {
         width: 20rem;
     }
@@ -422,30 +295,7 @@
 }
 /* Break point 768 */
 @media screen and (min-width:768px) {
-    .main-wrapper{
-        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
-        min-width: 320px;
-    }
-    .logo{
-        grid-column: 1;
-        display: flex;
-    }
-    .logo a img{
-        height: 6rem;
-        padding: 1rem;
-        animation-name: girar;
-        animation-duration: 5s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-    }
-    .titulo{
-        display: flex;
-        grid-column: 2;
-        font-family: 'Dancing Script', cursive ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    /*      Header       */
     .titulo h1{
         font-size: 2rem;
     }
@@ -454,23 +304,7 @@
     }
     /* nav */
     .nav-link{
-        color: black;
-        text-decoration: none;
         padding: 2px;
-    }
-    .nav-li{
-        padding: 0rem 0rem ;
-    }
-    .display-inline{
-        display: inline;
-    }
-    nav{
-        grid-column: 3;
-        display: flex;
-    }
-    .header-button {
-        background-color: transparent;
-        border:none;
     }
     /*      Main     */
     .p-style{
@@ -479,22 +313,9 @@
     }
     h3{
         padding: 1rem 0rem;
-        font-family: 'Dancing Script', cursive ;
         font-size: 40px;
-        font-style: italic;
-        text-decoration: underline dotted black;
-        align-self: center;
-    }
-    .center{
-        text-align: center;
-    }
-    .nosotros-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .titulo-3-main{
-        display: flex;
         justify-content: center;
     }
     /* Article container */
@@ -510,8 +331,6 @@
     .img-especialidad{
         width: 300px;
         height: 300px;
-        justify-self: center;
-        border: solid black;
     }
     .header-style{
         padding-top: 1rem;
@@ -520,19 +339,6 @@
     .p-especialidad{
         padding: 1rem 2rem 0rem 0rem;
         max-width: 60rem;
-    }
-    /*    Footer    */
-    .div-fot{
-        display: flex;
-        justify-content: flex-end; 
-        align-items: flex-end;
-        height: 4rem;
-    }
-    .li-fot{
-        padding-right: 1rem;
-    }
-    .a-fot{
-        text-decoration: none;
     }
     /*    Field set  */
     .fieldset-contact{
@@ -558,17 +364,7 @@
     }
     .contact-textarea{
         height: 5rem;
-        width: 26rem;
-    }
-    .mapa{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    @keyframes girar {
-        100%{
-            transform: rotateY(360deg);
-        }        
+        width: 26rem;      
     }
     /*      Servicios        */
     .p-servicios {
@@ -586,51 +382,8 @@
 }
 /* Break point 1024 */
 @media screen and (min-width:1024px) {
-    .main-wrapper{
-        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
-        min-width: 320px;
-    }
-    /*      Header    */
-    .logo{
-        grid-column: 1;
-        display: flex;
-    }
-    .logo a img{
-        height: 6rem;
-        padding: 1rem;
-        animation-name: girar;
-        animation-duration: 5s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-    }
-    .titulo{
-        display: flex;
-        grid-column: 2;
-        font-family: 'Dancing Script', cursive ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .titulo h1{
-        font-size: 2rem;
-    }
-    .titulo h2{
-        font-size: 1.5rem;
-    }
-    .nav-link{
-        color: black;
-        text-decoration: none;
-        padding: 2px;
-    }
-    .display-inline{
-        display: inline;
-    }
     /*      Nav      */
     nav{
-        grid-column: 3;
-        justify-content: flex-end;
-        align-items: flex-end;
-        display: flex;
         padding: 0;
     }
     nav ul{
@@ -639,9 +392,6 @@
         flex-direction: row;
         flex-wrap: nowrap !important;
     }
-    .nav-li{
-        padding: 0rem 0rem ;
-    }
     .dropdown-menu {
         position: static;
         border: none;
@@ -649,6 +399,9 @@
     }
     .navbar-toggler-icon {
         display: none;
+    }
+    nav ul li:hover{
+        border-bottom: 2px solid black;
     }
     /*      Main     */
     .width{
@@ -661,99 +414,22 @@
         padding-top: 20px;
         max-width: 50rem;
     }
-    h3{
-        padding: 1rem 0rem;
-        font-family: 'Dancing Script', cursive ;
-        font-size: 40px;
-        font-style: italic;
-        text-decoration: underline dotted black;
-        align-self: center;
-    }
-    .center{
-        text-align: center;
-    }
-    .nosotros-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .titulo-3-main{
-        display: flex;
-        justify-content: center;
-    }
     /* Article container */
-    .article-container{
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-    }
-    .article-especialidad{
-        display: grid;
-        grid-template-columns: repeat(2,auto);
-        padding: 0rem 0rem 2rem 1rem;
-    }
-    .img-especialidad{
-        width: 300px;
-        height: 300px;
-        justify-self: center;
-        border: solid black;
-    }
     .header-style{
         padding: 0rem;
         text-align: left;
     }
     .p-especialidad{
         padding: 2rem 2rem 0rem 0rem;
-        max-width: 60rem;
-    }
-    /*      Footer       */
-    .div-fot{
-        display: flex;
-        justify-content: flex-end; 
-        align-items: flex-end;
-        height: 4rem;
-    }
-    .li-fot{
-        padding-right: 1rem;
-    }
-    .a-fot{
-        text-decoration: none;
     }
         /*    Field set  */
     .fieldset-contact{
-        display: flex;
-        justify-content: center;
         margin: 0 4rem;
         padding: 0 1rem ;
-    }
-    .fieldset-button-box{
-        display: flex;
-        grid-column: 2;
-        justify-content: end;
-        padding: 0.5rem 0;
-    }
-    .fieldset-button{
-        font-size: 16px;
-        margin-left: 0.5rem;
-    }
-    .contact-imput{
-        width: 10rem;
-    }
-    .contact-form-label{
-        padding-left: 0.5rem;
     }
     .contact-textarea{
         height: 5rem;
         width: 44rem;
-    }
-    .mapa{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    @keyframes girar {
-        100%{
-            transform: rotateY(360deg);
-        }        
     }
     /*      Servicios        */
     .p-servicios {
@@ -766,7 +442,6 @@
     .galery-img-scale{
         width: 25rem;
         height: 25rem;
-        padding-left: 5px;
     }
     .d-block-row{
         display: block;
@@ -781,145 +456,30 @@
 }
 /* Break point 1200px */
 @media screen and (min-width:1200px) {
-    .main-wrapper{
-        background-image: linear-gradient(rgba(241, 216, 178, 1), rgba(241, 216, 178, 0.123), rgba(241, 216, 178, 1));
-        min-width: 320px;
-    }
-    .logo{
-        grid-column: 1;
-        display: flex;
-    }
-    .logo a img{
-        height: 6rem;
-        padding: 1rem;
-        animation-name: girar;
-        animation-duration: 5s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-    }
-    .titulo{
-        display: flex;
-        grid-column: 2;
-        font-family: 'Dancing Script', cursive ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .titulo h1{
-        font-size: 2rem;
-    }
-    .titulo h2{
-        font-size: 1.5rem;
-    }
-    .nav-a{
-        color: black;
-        text-decoration: none;
-        padding: 5px;
-    }
-    .display-inline{
-        display: inline;
-    }
-    nav{
-        grid-column: 3;
-        justify-content: flex-end;
-        align-items: flex-end;
-        display: flex;
-    }
+    /*      Header       */
     .nav-link{
-        color: black;
-        text-decoration: none;
         padding: 5px;
     }
     nav ul {
-        margin-right: 1rem; 
-        display: flex;    
-    }
-    .nav-li{
-        padding: 0rem 0rem ;
-        border-bottom: 0.3rem solid transparent;
+        margin-right: 1rem;   
     }
     /*      Main     */
     .p-style{
         max-width: 70rem;
     }
     h3{
-        padding: 1rem 0rem;
-        font-family: 'Dancing Script', cursive ;
-        font-size: 40px;
-        font-style: italic;
-        text-decoration: underline dotted black;
-        align-self: center;
         text-align: left;
-    }
-    .center{
-        text-align: center;
-    }
-    .nosotros-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* Article container */
-    .article-container{
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-    }
-    .article-especialidad{
-        display: grid;
-        grid-template-columns: repeat(2,auto);
-        padding: 0rem 0rem 2rem 1rem;
-    }
-    .img-especialidad{
-        width: 300px;
-        height: 300px;
-        border: solid black;
-    }
-    .div-fot{
-        display: flex;
-        justify-content: flex-end; 
-        align-items: flex-end;
-        height: 4rem;
-    }
-    .li-fot{
-        padding-right: 1rem;
-    }
-    .a-fot{
-        text-decoration: none;
-    }
-    /*    Field set  */
-    .mapa{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     /*      Servicios        */
     .p-servicios {
         margin: 0 5rem;;
     }
-    /*     Animaciones y transiciones    */
-    @keyframes girar {
-        100%{
-            transform: rotateY(360deg);
-        }        
-    }
-    nav ul li:hover{
-        border-bottom: 2px solid black;
-    }
-    /*      Galeria       */
-    .carousel-width{
-        width: 25rem;
-    }
     /*      Promociones      */
     .promo-img-scale {
-        width: 20rem;
         height: 100%;
     }
     .col-promo{
-        display: flex;
         justify-content: end;
         padding-right: 2rem;
-    }
-    .row-promo{
-        padding: 0 0 1rem 0;
     }
 }
