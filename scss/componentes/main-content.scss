@@ -113,6 +113,27 @@
         .f-col{
             flex-direction: column;
         }
+        .promo-img-scale {
+            width: 15rem;
+            height: 100%;
+            padding-bottom: 1rem;
+        }
+        .col-promo{
+            display: flex;
+            justify-content: center;
+            padding-right: 0rem;
+        }
+        .row-promo{
+            padding: 0 0 1rem 0;
+        }
+        .jf-cont {
+            justify-content: center;
+        }
+        .col-promo-txt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 @media screen and (min-width:$breakpoint-375) {
@@ -147,6 +168,12 @@
         }
         .carousel-width {
             width: 20rem;
+        }
+        /*      Promociones       */
+        .promo-img-scale {
+            width: 20rem;
+            height: 80%;
+            padding-right: 1rem;
         }
     }
 }
@@ -256,6 +283,19 @@
           /*      Servicios        */
         .p-servicios {
             margin: 0 5rem;;
+        }
+        /*      Promociones      */
+        .promo-img-scale {
+            width: 20rem;
+            height: 100%;
+        }
+        .col-promo{
+            display: flex;
+            justify-content: end;
+            padding-right: 2rem;
+        }
+        .row-promo{
+            padding: 0 0 1rem 0;
         }
     }
 }

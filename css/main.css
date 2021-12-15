@@ -203,13 +203,30 @@
       flex-direction: column;
       align-items: center; }
     .main-wrapper .f-col {
-      flex-direction: column; } }
+      flex-direction: column; }
+    .main-wrapper .promo-img-scale {
+      width: 15rem;
+      height: 100%;
+      padding-bottom: 1rem; }
+    .main-wrapper .col-promo {
+      display: flex;
+      justify-content: center;
+      padding-right: 0rem; }
+    .main-wrapper .row-promo {
+      padding: 0 0 1rem 0; }
+    .main-wrapper .jf-cont {
+      justify-content: center; }
+    .main-wrapper .col-promo-txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 @media screen and (min-width: 375px) {
   .main-wrapper {
     /*    Field set  */
     /*      Servicios       */
-    /*      Galeria      */ }
+    /*      Galeria      */
+    /*      Promociones       */ }
     .main-wrapper .p-style {
       max-width: 25rem; }
     .main-wrapper h3 {
@@ -229,7 +246,11 @@
       width: 20rem;
       height: 20rem; }
     .main-wrapper .carousel-width {
-      width: 20rem; } }
+      width: 20rem; }
+    .main-wrapper .promo-img-scale {
+      width: 20rem;
+      height: 80%;
+      padding-right: 1rem; } }
 
 @media screen and (min-width: 768px) {
   .main-wrapper {
@@ -306,11 +327,21 @@
 
 @media screen and (min-width: 1200px) {
   .main-wrapper {
-    /*      Servicios        */ }
+    /*      Servicios        */
+    /*      Promociones      */ }
     .main-wrapper .p-style {
       max-width: 70rem; }
     .main-wrapper .p-servicios {
-      margin: 0 5rem; } }
+      margin: 0 5rem; }
+    .main-wrapper .promo-img-scale {
+      width: 20rem;
+      height: 100%; }
+    .main-wrapper .col-promo {
+      display: flex;
+      justify-content: end;
+      padding-right: 2rem; }
+    .main-wrapper .row-promo {
+      padding: 0 0 1rem 0; } }
 
 footer .div-fot {
   display: flex;
