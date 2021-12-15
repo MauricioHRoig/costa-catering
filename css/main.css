@@ -115,7 +115,8 @@
 
 @media screen and (min-width: 320px) {
   .main-wrapper {
-    /*       Field set      */ }
+    /*       Field set      */
+    /*      Servicios        */ }
     .main-wrapper .nosotros-section {
       display: flex;
       flex-direction: column;
@@ -175,31 +176,47 @@
     .main-wrapper .mapa {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+    .main-wrapper .img-servicios {
+      width: 80%;
+      height: 100%;
+      padding-top: 1rem; }
+    .main-wrapper .art-servicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 2rem; }
+    .main-wrapper .p-servicios {
+      text-align: center;
+      margin: 0;
+      padding-top: 1rem; } }
 
 @media screen and (min-width: 375px) {
-  .mainwrapper {
-    /*    Field set  */ }
-    .mainwrapper .p-style {
+  .main-wrapper {
+    /*    Field set  */
+    /*      Servicios       */ }
+    .main-wrapper .p-style {
       max-width: 25rem; }
-    .mainwrapper h3 {
+    .main-wrapper h3 {
       padding: 15px 0px;
       font-size: 25px; }
-    .mainwrapper .fieldset-button {
+    .main-wrapper .fieldset-button {
       font-size: 16px;
       margin-left: 0.5rem; }
-    .mainwrapper .contact-imput {
+    .main-wrapper .contact-imput {
       width: 10rem; }
-    .mainwrapper .contact-textarea {
+    .main-wrapper .contact-textarea {
       height: 5rem;
-      width: 12rem; } }
+      width: 12rem; }
+    .main-wrapper .p-servicios {
+      margin: 0 2rem; } }
 
 @media screen and (min-width: 768px) {
   .main-wrapper {
-    /*    Field set  */ }
+    /*    Field set  */
+    /*      Servicios        */ }
     .main-wrapper .p-style {
-      max-width: 45rem;
-      text-align: left; }
+      max-width: 45rem; }
     .main-wrapper h3 {
       padding: 1rem 0;
       font-size: 40px; }
@@ -216,18 +233,22 @@
       margin-left: 0.5rem; }
     .main-wrapper .contact-textarea {
       height: 5rem;
-      width: 26rem; } }
+      width: 26rem; }
+    .main-wrapper .p-servicios {
+      margin: 0 5rem; } }
 
 @media screen and (min-width: 1024px) {
   .main-wrapper {
-    /*      FieldSet         */ }
+    /*      FieldSet         */
+    /*      Servicios        */ }
     .main-wrapper .width {
       width: 100%; }
     .main-wrapper .row-desk {
       flex-direction: row; }
     .main-wrapper .p-style {
       padding-top: 20px;
-      max-width: 50rem; }
+      max-width: 50rem;
+      text-align: left; }
     .main-wrapper .header-style {
       padding: 0rem;
       text-align: left; }
@@ -241,11 +262,17 @@
       width: 10rem; }
     .main-wrapper .contact-textarea {
       height: 5rem;
-      width: 44rem; } }
+      width: 44rem; }
+    .main-wrapper .p-servicios {
+      margin: 0 3rem; } }
 
 @media screen and (min-width: 1200px) {
-  .main-wrapper .p-style {
-    max-width: 70rem; } }
+  .main-wrapper {
+    /*      Servicios        */ }
+    .main-wrapper .p-style {
+      max-width: 70rem; }
+    .main-wrapper .p-servicios {
+      margin: 0 5rem; } }
 
 footer .div-fot {
   display: flex;
