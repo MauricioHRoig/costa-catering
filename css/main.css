@@ -116,7 +116,8 @@
 @media screen and (min-width: 320px) {
   .main-wrapper {
     /*       Field set      */
-    /*      Servicios        */ }
+    /*      Servicios        */
+    /*      Galeria      */ }
     .main-wrapper .nosotros-section {
       display: flex;
       flex-direction: column;
@@ -189,12 +190,26 @@
     .main-wrapper .p-servicios {
       text-align: center;
       margin: 0;
-      padding-top: 1rem; } }
+      padding-top: 1rem; }
+    .main-wrapper .carousel-width {
+      width: 15rem;
+      padding-top: 1rem; }
+    .main-wrapper .galery-img-scale {
+      width: 15rem;
+      height: 15rem;
+      padding-left: 5px; }
+    .main-wrapper .flex-column-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .main-wrapper .f-col {
+      flex-direction: column; } }
 
 @media screen and (min-width: 375px) {
   .main-wrapper {
     /*    Field set  */
-    /*      Servicios       */ }
+    /*      Servicios       */
+    /*      Galeria      */ }
     .main-wrapper .p-style {
       max-width: 25rem; }
     .main-wrapper h3 {
@@ -209,12 +224,18 @@
       height: 5rem;
       width: 12rem; }
     .main-wrapper .p-servicios {
-      margin: 0 2rem; } }
+      margin: 0 2rem; }
+    .main-wrapper .galery-img-scale {
+      width: 20rem;
+      height: 20rem; }
+    .main-wrapper .carousel-width {
+      width: 20rem; } }
 
 @media screen and (min-width: 768px) {
   .main-wrapper {
     /*    Field set  */
-    /*      Servicios        */ }
+    /*      Servicios        */
+    /*      Galeria      */ }
     .main-wrapper .p-style {
       max-width: 45rem; }
     .main-wrapper h3 {
@@ -235,12 +256,19 @@
       height: 5rem;
       width: 26rem; }
     .main-wrapper .p-servicios {
-      margin: 0 5rem; } }
+      margin: 0 5rem; }
+    .main-wrapper .carousel-width {
+      width: 21rem; }
+    .main-wrapper .galery-img-scale {
+      width: 21rem;
+      height: 21rem;
+      padding-left: 5px; } }
 
 @media screen and (min-width: 1024px) {
   .main-wrapper {
     /*      FieldSet         */
-    /*      Servicios        */ }
+    /*      Servicios        */
+    /*      Galeria      */ }
     .main-wrapper .width {
       width: 100%; }
     .main-wrapper .row-desk {
@@ -264,7 +292,17 @@
       height: 5rem;
       width: 44rem; }
     .main-wrapper .p-servicios {
-      margin: 0 3rem; } }
+      margin: 0 3rem; }
+    .main-wrapper .carousel-width {
+      width: 25rem; }
+    .main-wrapper .galery-img-scale {
+      width: 25rem;
+      height: 25rem; }
+    .main-wrapper .d-block-row {
+      display: block;
+      flex-direction: row; }
+    .main-wrapper .f-row {
+      flex-direction: row; } }
 
 @media screen and (min-width: 1200px) {
   .main-wrapper {
