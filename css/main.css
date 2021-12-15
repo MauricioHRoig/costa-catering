@@ -186,3 +186,18 @@
 @media screen and (min-width: 1200px) {
   .main-wrapper .p-style {
     max-width: 70rem; } }
+
+footer .div-fot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 4rem; }
+
+footer .display-inline {
+  display: inline; }
+
+footer .li-fot {
+  padding-right: 1rem; }
+
+footer .a-fot {
+  text-decoration: none; }
