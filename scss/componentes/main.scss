@@ -1,0 +1,104 @@
+@media screen and (min-width:$breakpoint-320) {
+    .main-wrapper{
+        .nosotros-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .p-style{
+            font-family: 'Raleway', sans-serif;
+            max-width: 17rem;
+            text-align: center;
+        }
+        h3{
+            padding: 10px 0px;
+            font-family: 'Dancing Script', cursive ;
+            font-size: 20px;
+            font-style: italic;
+            text-decoration: underline dotted black;
+            align-self: center;
+        }
+        .width{
+            width: auto;
+        }
+        .column-mob{
+            flex-direction: column;
+        }
+        .img-especialidad{
+            width: 300px;
+            height: 300px;
+            justify-self: center;
+            border: solid black;
+        }
+        .header-style{
+            font-family: 'Dancing Script';
+            font-size: 25px;
+            text-decoration: underline black;
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+        .p-especialidad{
+            padding-top: 1rem;
+            max-width: 45rem;
+        }
+    }
+}
+@media screen and (min-width:$breakpoint-375) {
+    .mainwrapper {
+        .p-style{
+            max-width: 25rem;
+        }
+        h3 {
+            padding: 15px 0px;
+            font-size: 25px;
+        }
+    }
+}
+@media screen and (min-width:$breakpoint-768) {
+    .main-wrapper {
+        .p-style{
+            max-width: 45rem;
+            text-align: left;
+        }
+        h3 {
+            padding: 1rem 0;
+            font-size: 40px;
+        }
+        .header-style{
+            padding-top: 1rem;
+            font-size: 30px;
+        }
+        .p-especialidad{
+            padding: 1rem 2rem 0rem 0rem;
+        }
+    }    
+}
+@media screen and (min-width:$breakpoint-1024) {
+    .main-wrapper {
+        .width{
+            width: 100%;
+        }
+        .row-desk{
+            flex-direction: row;
+        }
+        .p-style{
+            padding-top: 20px;
+            max-width: 50rem;
+        }
+        .header-style{
+            padding: 0rem;
+            text-align: left;
+        }
+        .p-especialidad{
+            padding: 2rem 2rem 0rem 0rem;
+            max-width: 60rem;
+        }  
+    }
+}
+@media screen and (min-width:$breakpoint-1200) {
+    .main-wrapper {
+        .p-style{
+            max-width: 70rem;
+        }
+    }
+}
