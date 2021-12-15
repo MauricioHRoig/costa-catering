@@ -41,6 +41,43 @@
             padding-top: 1rem;
             max-width: 45rem;
         }
+        .center{
+            text-align: center;
+        }  
+        /*       Field set      */
+        .fieldset-contact{
+            display: flex;
+            justify-content: center;
+            border: double;
+        }
+        .fieldset-button-box{
+            display: flex;
+            grid-column: 2;
+            justify-content: end;
+            padding: 0.5rem 0;
+        }
+        .fieldset-button{
+            font-size: 13px;
+            margin-left: 0.5rem;
+        }
+        .form-contact{
+            width: 80%;
+        }
+        .contact-imput{
+            width: 9rem;
+        }
+        .contact-form-label{
+            padding-left: 0.5rem;
+        }
+        .contact-textarea{
+            height: 5rem;
+            width: 9rem;
+        }
+        .mapa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 @media screen and (min-width:$breakpoint-375) {
@@ -52,6 +89,18 @@
             padding: 15px 0px;
             font-size: 25px;
         }
+         /*    Field set  */
+        .fieldset-button{
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
+        .contact-imput{
+            width: 10rem;
+        }
+        .contact-textarea{
+            height: 5rem;
+            width: 12rem;
+        } 
     }
 }
 @media screen and (min-width:$breakpoint-768) {
@@ -70,6 +119,19 @@
         }
         .p-especialidad{
             padding: 1rem 2rem 0rem 0rem;
+        }
+        /*    Field set  */
+        .fieldset-contact{
+            justify-content: center;
+            margin: 0 5rem;
+        }
+        .fieldset-button{
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
+        .contact-textarea{
+            height: 5rem;
+            width: 26rem;
         }
     }    
 }
@@ -92,7 +154,19 @@
         .p-especialidad{
             padding: 2rem 2rem 0rem 0rem;
             max-width: 60rem;
-        }  
+        }
+        /*      FieldSet         */
+        .fieldset-contact{
+            margin: 0 4rem;
+            padding: 0 1rem ;
+        }
+        .contact-imput{
+            width: 10rem;
+        }
+        .contact-textarea{
+            height: 5rem;
+            width: 44rem;
+        }
     }
 }
 @media screen and (min-width:$breakpoint-1200) {
