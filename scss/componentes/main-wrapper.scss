@@ -1,12 +1,4 @@
-@media screen and (min-width: $breakpoint-320) {
-   .main-wrapper{
+.main-wrapper{
     background-image: linear-gradient($bg-color, rgba(241, 216, 178, 0.548), $bg-color);
     min-width: 320px;
-    } 
-}
-
-@media screen and (min-width:$breakpoint-768) {
-    .main-wrapper{
-    background-image: linear-gradient($bg-color, rgba(241, 216, 178, 0.123), $bg-color);
-    }
-}
+} 

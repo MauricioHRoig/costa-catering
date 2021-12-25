@@ -1,147 +1,148 @@
-@media screen and (min-width:$breakpoint-320) {
-    .main-wrapper{
-        .nosotros-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .p-style{
-            font-family: 'Raleway', sans-serif;
-            max-width: 17rem;
-            text-align: center;
-        }
-        h3{
-            padding: 0.5rem 0 0.5rem 0;
-            font-family: 'Dancing Script', cursive ;
-            font-size: 20px;
-            font-style: italic;
-            text-decoration: underline dotted black;
-            align-self: center;
-        }
-        .width{
-            width: auto;
-        }
-        .column-mob{
-            flex-direction: column;
-        }
-        .img-especialidad{
-            width: 300px;
-            height: 300px;
-            justify-self: center;
-            border: solid black;
-        }
-        .header-style{
-            font-family: 'Dancing Script';
-            font-size: 25px;
-            text-decoration: underline black;
-            text-align: center;
-            padding: 0.5rem 0 0.2rem 0;
-        }
-        .p-especialidad{
-            padding-top: 1rem;
-            max-width: 45rem;
-        }
-        .center{
-            text-align: center;
-        }  
-        /*       Contacto      */
-        .fieldset-contact{
-            display: flex;
-            justify-content: center;
-            border: double;
-        }
-        .fieldset-button-box{
-            display: flex;
-            grid-column: 2;
-            justify-content: end;
-            padding: 0.5rem 0;
-        }
-        .fieldset-button{
-            font-size: 13px;
-            margin-left: 0.5rem;
-        }
-        .btn-primary:active{
-            color: #fff;
-            background-color: #42470e;
-            border-color: #42470e;
-        }
-        .form-contact{
-            width: 80%;
-        }
-        .contact-imput{
-            width: 9rem;
-        }
-        .contact-form-label{
-            padding-left: 0.5rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 9rem;
-        }
-        .mapa{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        /*      Servicios        */
-        .img-servicios {
-            width: 80%;
-            height: 100%;
-            padding-top: 1rem;    
-        }
-        .art-servicios {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 2rem;   
-        }
-        .p-servicios {
-            text-align: center; 
-            margin: 0;
-            padding-top: 1rem;
-        }
-        /*      Galeria      */
-        .carousel-width{
-            width: 15rem;
-            padding-top: 1rem;
-        }
-        .galery-img-scale {
-            width: 15rem;
-            height: 15rem;
-        }
-        .flex-column-center{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .f-col{
-            flex-direction: column;
-        }
-        .pad-0{
-            padding: 0 !important;
-        }
-        /*      Galeria      */
-        .promo-img-scale {
-            width: 15rem;
-            height: 100%;
-            padding: 0;
-        }
-        .col-promo{
-            display: flex;
-            justify-content: center;
-            padding-right: 0rem;
-        }
-        .row-promo{
-            padding: 0 0 1rem 0;
-        }
-        .jf-cont {
-            justify-content: center;
-        }
-        .col-promo-txt {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.main-wrapper{
+    .centered-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros-section{
+        @extend .centered-column;
+    }
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        max-width: 17rem;
+        text-align: center;
+    }
+    h3{
+        padding: 0.5rem 0 0.5rem 0;
+        font-family: 'Dancing Script', cursive ;
+        font-size: 20px;
+        font-style: italic;
+        text-decoration: underline dotted black;
+        align-self: center;
+    }
+    .width{
+        width: auto;
+    }
+    .column-mob{
+        flex-direction: column;
+    }
+    .img-especialidad{
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-style{
+        font-family: 'Dancing Script';
+        font-size: 25px;
+        text-decoration: underline black;
+        text-align: center;
+        padding: 0.5rem 0 0.2rem 0;
+    }
+    .p-especialidad{
+        padding-top: 1rem;
+        max-width: 45rem;
+    }
+    .center{
+        text-align: center;
+    }  
+    /*       Contacto      */
+    .fieldset-contact{
+        display: flex;
+        justify-content: center;
+        border: double;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .fieldset-button{
+        font-size: 13px;
+        margin-left: 0.5rem;
+    }
+    .btn-primary:active{
+        color: #fff;
+        background-color: #42470e;
+        border-color: #42470e;
+    }
+    .form-contact{
+        width: 80%;
+    }
+    .contact-imput{
+        width: 9rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 9rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*      Servicios        */
+    .img-servicios {
+        width: 80%;
+        height: 100%;
+        padding-top: 1rem;    
+    }
+    .art-servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;   
+    }
+    .p-servicios {
+        text-align: center; 
+        margin: 0;
+        padding-top: 1rem;
+    }
+    /*      Galeria      */
+    .carousel-width{
+        width: 15rem;
+        padding-top: 1rem;
+    }
+    .galery-img-scale {
+        width: 15rem;
+        height: 15rem;
+    }
+    .flex-column-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-col{
+        flex-direction: column;
+    }
+    .pad-0{
+        padding: 0 !important;
+    }
+    /*      Galeria      */
+    .promo-img-scale {
+        width: 15rem;
+        height: 100%;
+        padding: 0;
+    }
+    .col-promo{
+        display: flex;
+        justify-content: center;
+        padding-right: 0rem;
+    }
+    .row-promo{
+        padding: 0 0 1rem 0;
+    }
+    .jf-cont {
+        justify-content: center;
+    }
+    .col-promo-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media screen and (min-width:$breakpoint-375) {
@@ -229,6 +230,9 @@
 }
 @media screen and (min-width:$breakpoint-1024) {
     .main-wrapper {
+        .d-block-1024{
+            display: block;
+        }
         .width{
             width: 100%;
         }
