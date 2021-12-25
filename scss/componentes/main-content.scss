@@ -1,22 +1,25 @@
 .main-wrapper{
-    .centered-column {
+    @mixin centered-column {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .nosotros-section{
-        @extend .centered-column;
+        @include centered-column;
     }
     .p-style{
         font-family: 'Raleway', sans-serif;
         max-width: 17rem;
         text-align: center;
     }
-    h3{
-        padding: 0.5rem 0 0.5rem 0;
+    .titulo{
         font-family: 'Dancing Script', cursive ;
-        font-size: 20px;
+    }
+    h3{
+        @extend .titulo;
         font-style: italic;
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 20px;
         text-decoration: underline dotted black;
         align-self: center;
     }
@@ -33,7 +36,7 @@
         border: solid black;
     }
     .header-style{
-        font-family: 'Dancing Script';
+        @extend .titulo;
         font-size: 25px;
         text-decoration: underline black;
         text-align: center;
@@ -145,7 +148,7 @@
         align-items: center;
     }
 }
-@media screen and (min-width:$breakpoint-375) {
+@media screen and (min-width: map-get($breakpoints, 375)) {
     .main-wrapper { 
         .p-style{
             max-width: 22rem;
@@ -185,7 +188,7 @@
         }
     }
 }
-@media screen and (min-width:$breakpoint-768) {
+@media screen and (min-width: map-get($breakpoints, 768)) {
     .main-wrapper {
         .p-style{
             max-width: 40rem;
@@ -228,7 +231,7 @@
         }
     }    
 }
-@media screen and (min-width:$breakpoint-1024) {
+@media screen and (min-width: map-get($breakpoints, 1024)) {
     .main-wrapper {
         .d-block-1024{
             display: block;
@@ -294,7 +297,7 @@
         }
     }
 }
-@media screen and (min-width:$breakpoint-1200) {
+@media screen and (min-width: map-get($breakpoints, 1200)) {
     .main-wrapper {
         .p-style{
             max-width: 70rem;
