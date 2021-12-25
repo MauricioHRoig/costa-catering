@@ -1,6 +1,8 @@
 $bg-color: rgba(241, 216, 178, 1);
-$breakpoint-320: 320px;
-$breakpoint-375: 375px;
-$breakpoint-768: 768px;
-$breakpoint-1024: 1024px;
-$breakpoint-1200: 1200px;
+$breakpoints: (
+    375: 375px,
+    768: 768px,
+    1024: 1024px,
+    1200: 1200px
+)
+

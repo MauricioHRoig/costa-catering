@@ -1,80 +1,78 @@
-@media screen and (min-width:$breakpoint-320){
-    header{
-        background-color: $bg-color;
-        border: solid black;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        position: sticky;
-        top: 0%;
-        z-index: 99;
-        .logo{
-            grid-column: 1;
-            display: flex;
-            justify-content: center;
-            a{
-                img{
-                    height: 5rem;
-                    padding-top: 0.5rem;
-                    animation-name: girar;
-                    animation-duration: 5s;
-                    animation-delay: 2s;
-                    animation-iteration-count: infinite;    
-                }
+header{
+    background-color: $bg-color;
+    border: solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    top: 0%;
+    z-index: 99;
+    .logo{
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        a{
+            img{
+                height: 5rem;
+                padding-top: 0.5rem;
+                animation-name: girar;
+                animation-duration: 5s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;    
             }
-        }
-        .titulo{
-            grid-column: 2;
-            display: flex;
-            font-family: 'Dancing Script', cursive ;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h1{
-                font-size: 1.5rem;
-            }
-            h2{
-                font-size: 0.9rem;
-                text-align: center;
-            }
-        }
-        nav{
-            grid-column: 3;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding: 0 0.3rem 0.3rem 0;
-            .header-button {
-                background-color: transparent;
-                border:none;
-            }
-            .header-button::after{
-                content: none !important
-            }
-            .dropdown-menu {
-                background-color: rgb(241, 216, 178);
-            }
-            .dropdown-menu[data-bs-popper] {
-                top: 70%;
-                right: 0rem;
-                left: auto;    
-            }   
-            ul{
-                display: flex;
-                .nav-link{
-                    color: black;
-                    text-decoration: none;
-                    font-size: 15px;
-                }
-            }
-        }
-        @keyframes girar {
-            100%{
-                transform: rotateY(360deg);
-            }        
         }
     }
+    .titulo{
+        grid-column: 2;
+        display: flex;
+        font-family: 'Dancing Script', cursive ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    }
+    nav{
+        grid-column: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 0.3rem 0.3rem 0;
+        .header-button {
+            background-color: transparent;
+            border:none;
+        }
+        .header-button::after{
+            content: none !important
+        }
+        .dropdown-menu {
+            background-color: rgb(241, 216, 178);
+        }
+        .dropdown-menu[data-bs-popper] {
+            top: 70%;
+            right: 0rem;
+            left: auto;    
+        }   
+        ul{
+            display: flex;
+            .nav-link{
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
+    }
+    @keyframes girar {
+        100%{
+            transform: rotateY(360deg);
+        }        
+    }
 }
-@media screen and (min-width:$breakpoint-375) {
+@media screen and (min-width: map-get($breakpoints, 375)) {
     header{
         .logo a img{
             height: 6rem;
@@ -87,7 +85,7 @@
         }
     }
 }
-@media screen and (min-width:$breakpoint-768) {
+@media screen and (min-width: map-get($breakpoints, 768)) {
     header {
         .titulo {
             h1 {
@@ -102,7 +100,7 @@
         }
     }
 }
-@media screen and (min-width:$breakpoint-1024) {
+@media screen and (min-width: map-get($breakpoints, 1024)) {
     header {
         nav{
             padding: 0;
@@ -129,7 +127,7 @@
         }
     }       
 }
-@media screen and (min-width:$breakpoint-1200) {
+@media screen and (min-width: map-get($breakpoints, 1200)) {
     header {
         .nav-link{
             padding: 5px;

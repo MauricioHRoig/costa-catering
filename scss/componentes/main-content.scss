@@ -1,145 +1,157 @@
-@media screen and (min-width:$breakpoint-320) {
-    .main-wrapper{
-        .nosotros-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .p-style{
-            font-family: 'Raleway', sans-serif;
-            max-width: 17rem;
-            text-align: center;
-        }
-        h3{
-            padding: 10px 0px;
-            font-family: 'Dancing Script', cursive ;
-            font-size: 20px;
-            font-style: italic;
-            text-decoration: underline dotted black;
-            align-self: center;
-        }
-        .width{
-            width: auto;
-        }
-        .column-mob{
-            flex-direction: column;
-        }
-        .img-especialidad{
-            width: 300px;
-            height: 300px;
-            justify-self: center;
-            border: solid black;
-        }
-        .header-style{
-            font-family: 'Dancing Script';
-            font-size: 25px;
-            text-decoration: underline black;
-            text-align: center;
-            padding-top: 0.5rem;
-        }
-        .p-especialidad{
-            padding-top: 1rem;
-            max-width: 45rem;
-        }
-        .center{
-            text-align: center;
-        }  
-        /*       Field set      */
-        .fieldset-contact{
-            display: flex;
-            justify-content: center;
-            border: double;
-        }
-        .fieldset-button-box{
-            display: flex;
-            grid-column: 2;
-            justify-content: end;
-            padding: 0.5rem 0;
-        }
-        .fieldset-button{
-            font-size: 13px;
-            margin-left: 0.5rem;
-        }
-        .form-contact{
-            width: 80%;
-        }
-        .contact-imput{
-            width: 9rem;
-        }
-        .contact-form-label{
-            padding-left: 0.5rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 9rem;
-        }
-        .mapa{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        /*      Servicios        */
-        .img-servicios {
-            width: 80%;
-            height: 100%;
-            padding-top: 1rem;    
-        }
-        .art-servicios {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 2rem;   
-        }
-        .p-servicios {
-            text-align: center; 
-            margin: 0;
-            padding-top: 1rem;
-        }
-        /*      Galeria      */
-        .carousel-width{
-            width: 15rem;
-            padding-top: 1rem;
-        }
-        .galery-img-scale {
-            width: 15rem;
-            height: 15rem;
-            padding-left: 5px;
-        }
-        .flex-column-center{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .f-col{
-            flex-direction: column;
-        }
-        .promo-img-scale {
-            width: 15rem;
-            height: 100%;
-            padding-bottom: 1rem;
-        }
-        .col-promo{
-            display: flex;
-            justify-content: center;
-            padding-right: 0rem;
-        }
-        .row-promo{
-            padding: 0 0 1rem 0;
-        }
-        .jf-cont {
-            justify-content: center;
-        }
-        .col-promo-txt {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.main-wrapper{
+    @mixin centered-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros-section{
+        @include centered-column;
+    }
+    .p-style{
+        font-family: 'Raleway', sans-serif;
+        max-width: 17rem;
+        text-align: center;
+    }
+    .titulo{
+        font-family: 'Dancing Script', cursive ;
+    }
+    h3{
+        @extend .titulo;
+        font-style: italic;
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 20px;
+        text-decoration: underline dotted black;
+        align-self: center;
+    }
+    .width{
+        width: auto;
+    }
+    .column-mob{
+        flex-direction: column;
+    }
+    .img-especialidad{
+        width: 300px;
+        height: 300px;
+        justify-self: center;
+        border: solid black;
+    }
+    .header-style{
+        @extend .titulo;
+        font-size: 25px;
+        text-decoration: underline black;
+        text-align: center;
+        padding: 0.5rem 0 0.2rem 0;
+    }
+    .p-especialidad{
+        padding-top: 1rem;
+        max-width: 45rem;
+    }
+    .center{
+        text-align: center;
+    }  
+    /*       Contacto      */
+    .fieldset-contact{
+        display: flex;
+        justify-content: center;
+        border: double;
+    }
+    .fieldset-button-box{
+        display: flex;
+        grid-column: 2;
+        justify-content: end;
+        padding: 0.5rem 0;
+    }
+    .fieldset-button{
+        font-size: 13px;
+        margin-left: 0.5rem;
+    }
+    .btn-primary:active{
+        color: #fff;
+        background-color: #42470e;
+        border-color: #42470e;
+    }
+    .form-contact{
+        width: 80%;
+    }
+    .contact-imput{
+        width: 9rem;
+    }
+    .contact-form-label{
+        padding-left: 0.5rem;
+    }
+    .contact-textarea{
+        height: 5rem;
+        width: 9rem;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*      Servicios        */
+    .img-servicios {
+        width: 80%;
+        height: 100%;
+        padding-top: 1rem;    
+    }
+    .art-servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;   
+    }
+    .p-servicios {
+        text-align: center; 
+        margin: 0;
+        padding-top: 1rem;
+    }
+    /*      Galeria      */
+    .carousel-width{
+        width: 15rem;
+        padding-top: 1rem;
+    }
+    .galery-img-scale {
+        width: 15rem;
+        height: 15rem;
+    }
+    .flex-column-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-col{
+        flex-direction: column;
+    }
+    .pad-0{
+        padding: 0 !important;
+    }
+    /*      Galeria      */
+    .promo-img-scale {
+        width: 15rem;
+        height: 100%;
+        padding: 0;
+    }
+    .col-promo{
+        display: flex;
+        justify-content: center;
+        padding-right: 0rem;
+    }
+    .row-promo{
+        padding: 0 0 1rem 0;
+    }
+    .jf-cont {
+        justify-content: center;
+    }
+    .col-promo-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
-@media screen and (min-width:$breakpoint-375) {
+@media screen and (min-width: map-get($breakpoints, 375)) {
     .main-wrapper { 
         .p-style{
-            max-width: 25rem;
+            max-width: 22rem;
         }
         h3 {
             padding: 15px 0px;
@@ -172,15 +184,14 @@
         /*      Promociones       */
         .promo-img-scale {
             width: 20rem;
-            height: 80%;
-            padding-right: 1rem;
+            padding: 0;
         }
     }
 }
-@media screen and (min-width:$breakpoint-768) {
+@media screen and (min-width: map-get($breakpoints, 768)) {
     .main-wrapper {
         .p-style{
-            max-width: 45rem;
+            max-width: 40rem;
         }
         h3 {
             padding: 1rem 0;
@@ -217,12 +228,14 @@
         .galery-img-scale{
             width: 21rem;
             height: 21rem;
-            padding-left: 5px;
         }
     }    
 }
-@media screen and (min-width:$breakpoint-1024) {
+@media screen and (min-width: map-get($breakpoints, 1024)) {
     .main-wrapper {
+        .d-block-1024{
+            display: block;
+        }
         .width{
             width: 100%;
         }
@@ -273,9 +286,18 @@
         .f-row{
             flex-direction: row;
         }
+        .ps-3{
+            padding-left: 1rem !important;
+        }
+        /*      Promociones      */
+        .col-promo{
+            display: flex;
+            justify-content: end;
+            padding-right: 2rem;
+        }
     }
 }
-@media screen and (min-width:$breakpoint-1200) {
+@media screen and (min-width: map-get($breakpoints, 1200)) {
     .main-wrapper {
         .p-style{
             max-width: 70rem;
@@ -288,11 +310,6 @@
         .promo-img-scale {
             width: 20rem;
             height: 100%;
-        }
-        .col-promo{
-            display: flex;
-            justify-content: end;
-            padding-right: 2rem;
         }
         .row-promo{
             padding: 0 0 1rem 0;
