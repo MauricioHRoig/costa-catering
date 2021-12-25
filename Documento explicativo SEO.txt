@@ -1,0 +1,5 @@
+Agregue para todas los archicos HTML las siguientes caracteristicas de SEO:
+	Descripcion: mediante la etiqueta <meta> agregue una breve descripcion el sitio web
+	
+	Palabras claves: mediante la etiqueta <meta> con nombre keywords agregue las palabras mas
+			 relacionadas con el sitio web

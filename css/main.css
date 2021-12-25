@@ -30,16 +30,16 @@ header {
       animation-duration: 5s;
       animation-delay: 2s;
       animation-iteration-count: infinite; }
-  header .titulo {
+  header .titulo, header .main-wrapper h3, .main-wrapper header h3, header .main-wrapper .header-style, .main-wrapper header .header-style {
     grid-column: 2;
     display: flex;
     font-family: 'Dancing Script', cursive;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    header .titulo h1 {
+    header .titulo h1, header .main-wrapper h3 h1, .main-wrapper header h3 h1, header .main-wrapper .header-style h1, .main-wrapper header .header-style h1 {
       font-size: 1.5rem; }
-    header .titulo h2 {
+    header .titulo h2, header .main-wrapper h3 h2, .main-wrapper header h3 h2, header .main-wrapper .header-style h2, .main-wrapper header .header-style h2 {
       font-size: 0.9rem;
       text-align: center; }
   header nav {
@@ -74,13 +74,13 @@ header {
   header .logo a img {
     height: 6rem;
     padding: 1rem; }
-  header .titulo h2 {
+  header .titulo h2, header .main-wrapper h3 h2, .main-wrapper header h3 h2, header .main-wrapper .header-style h2, .main-wrapper header .header-style h2 {
     font-size: 1rem; } }
 
 @media screen and (min-width: 768px) {
-  header .titulo h1 {
+  header .titulo h1, header .main-wrapper h3 h1, .main-wrapper header h3 h1, header .main-wrapper .header-style h1, .main-wrapper header .header-style h1 {
     font-size: 2rem; }
-  header .titulo h2 {
+  header .titulo h2, header .main-wrapper h3 h2, .main-wrapper header h3 h2, header .main-wrapper .header-style h2, .main-wrapper header .header-style h2 {
     font-size: 1.5rem; }
   header .nav-link {
     padding: 2px; } }
@@ -121,11 +121,12 @@ header {
     font-family: 'Raleway', sans-serif;
     max-width: 17rem;
     text-align: center; }
+  .main-wrapper .titulo, .main-wrapper h3, .main-wrapper .header-style {
+    font-family: 'Dancing Script', cursive; }
   .main-wrapper h3 {
-    padding: 0.5rem 0 0.5rem 0;
-    font-family: 'Dancing Script', cursive;
-    font-size: 20px;
     font-style: italic;
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 20px;
     text-decoration: underline dotted black;
     align-self: center; }
   .main-wrapper .width {
@@ -138,7 +139,6 @@ header {
     justify-self: center;
     border: solid black; }
   .main-wrapper .header-style {
-    font-family: 'Dancing Script';
     font-size: 25px;
     text-decoration: underline black;
     text-align: center;

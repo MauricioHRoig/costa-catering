@@ -72,7 +72,7 @@ header{
         }        
     }
 }
-@media screen and (min-width:$breakpoint-375) {
+@media screen and (min-width: map-get($breakpoints, 375)) {
     header{
         .logo a img{
             height: 6rem;
@@ -85,7 +85,7 @@ header{
         }
     }
 }
-@media screen and (min-width:$breakpoint-768) {
+@media screen and (min-width: map-get($breakpoints, 768)) {
     header {
         .titulo {
             h1 {
@@ -100,7 +100,7 @@ header{
         }
     }
 }
-@media screen and (min-width:$breakpoint-1024) {
+@media screen and (min-width: map-get($breakpoints, 1024)) {
     header {
         nav{
             padding: 0;
@@ -127,7 +127,7 @@ header{
         }
     }       
 }
-@media screen and (min-width:$breakpoint-1200) {
+@media screen and (min-width: map-get($breakpoints, 1200)) {
     header {
         .nav-link{
             padding: 5px;
