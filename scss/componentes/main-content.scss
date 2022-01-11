@@ -150,9 +150,6 @@
 }
 @media screen and (min-width: map-get($breakpoints, 375)) {
     .main-wrapper { 
-        .p-style{
-            max-width: 22rem;
-        }
         h3 {
             padding: 15px 0px;
             font-size: 25px;
@@ -191,7 +188,7 @@
 @media screen and (min-width: map-get($breakpoints, 768)) {
     .main-wrapper {
         .p-style{
-            max-width: 40rem;
+            max-width: 60rem;
         }
         h3 {
             padding: 1rem 0;
@@ -202,7 +199,7 @@
             font-size: 30px;
         }
         .p-especialidad{
-            padding: 1rem 2rem 0rem 0rem;
+            padding: 1rem 0rem 0rem 0rem;
         }
         /*    Field set  */
         .fieldset-contact{
