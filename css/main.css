@@ -255,9 +255,9 @@ header {
     /*      Servicios        */
     /*      Galeria      */ }
     .main-wrapper .p-style {
-      max-width: 60rem; }
+      max-width: 35rem; }
     .main-wrapper h3 {
-      padding: 1rem 0;
+      padding: 1.3rem 0;
       font-size: 40px; }
     .main-wrapper .header-style {
       padding-top: 1rem;
@@ -335,7 +335,7 @@ header {
     /*      Servicios        */
     /*      Promociones      */ }
     .main-wrapper .p-style {
-      max-width: 70rem; }
+      max-width: 45rem; }
     .main-wrapper .p-servicios {
       margin: 0 5rem; }
     .main-wrapper .promo-img-scale {
