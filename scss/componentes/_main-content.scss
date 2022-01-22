@@ -7,6 +7,10 @@
     .nosotros-section{
         @include centered-column;
     }
+    .p-nosotros-index{
+        @extend .p-style;
+        text-align: center !important; 
+    }
     .p-style{
         font-family: 'Raleway', sans-serif;
         max-width: 35rem;
@@ -175,11 +179,13 @@
         padding-bottom: 2rem;   
     }
     .p-servicios {
+        font-family: 'Raleway', sans-serif;
         text-align: center; 
         margin: 0;
         padding-top: 1rem;
+        width: 80%;
 
-        @include for-breakpoint(m){
+        /* @include for-breakpoint(m){
             margin: 0 2rem;;
         }
         @include for-breakpoint(l){
@@ -190,7 +196,7 @@
         }
         @include for-breakpoint(xxl){
             margin: 0 5rem;;
-        }
+        } */
     }
     /*      Galeria      */
     .carousel-width{
