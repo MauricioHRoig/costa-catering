@@ -17,7 +17,12 @@ header{
                 animation-name: girar;
                 animation-duration: 5s;
                 animation-delay: 2s;
-                animation-iteration-count: infinite;    
+                animation-iteration-count: infinite;
+                
+                @include for-breakpoint(m){
+                    height: 6rem;
+                    padding: 1rem;
+                }
             }
         }
     }
@@ -30,10 +35,18 @@ header{
         align-items: center;
         h1{
             font-size: 1.5rem;
+
+            @include for-breakpoint(l){
+                font-size: 2rem;
+            }
         }
         h2{
             font-size: 0.9rem;
             text-align: center;
+
+            @include for-breakpoint(l){
+                font-size: 1.5rem;
+            }
         }
     }
     nav{
@@ -42,6 +55,13 @@ header{
         justify-content: flex-end;
         align-items: flex-end;
         padding: 0 0.3rem 0.3rem 0;
+
+        @include for-breakpoint(xl){
+            padding: 0;
+            .navbar-toggler-icon {
+                display: none;
+            }
+        }
         .header-button {
             background-color: transparent;
             border:none;
@@ -51,6 +71,12 @@ header{
         }
         .dropdown-menu {
             background-color: rgb(241, 216, 178);
+
+            @include for-breakpoint(xl){
+                position: static;
+                border: none;
+                padding: 0rem;
+            }
         }
         .dropdown-menu[data-bs-popper] {
             top: 70%;
@@ -59,60 +85,8 @@ header{
         }   
         ul{
             display: flex;
-            .nav-link{
-                color: black;
-                text-decoration: none;
-                font-size: 15px;
-            }
-        }
-    }
-    @keyframes girar {
-        100%{
-            transform: rotateY(360deg);
-        }        
-    }
-}
-@media screen and (min-width: map-get($breakpoints, 375)) {
-    header{
-        .logo a img{
-            height: 6rem;
-            padding: 1rem;
-        }
-        .titulo {
-            h2 {
-                font-size: 1rem;
-            }
-        }
-    }
-}
-@media screen and (min-width: map-get($breakpoints, 768)) {
-    header {
-        .titulo {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-        .nav-link{
-            padding: 2px;
-        }
-    }
-}
-@media screen and (min-width: map-get($breakpoints, 1024)) {
-    header {
-        nav{
-            padding: 0;
-            .dropdown-menu {
-                position: static;
-                border: none;
-                padding: 0rem;
-            }
-            .navbar-toggler-icon {
-                display: none;
-            }
-            ul{
+
+            @include for-breakpoint(xl){
                 display: flex !important;
                 margin-right: 0.5rem !important;
                 flex-direction: row;
@@ -122,18 +96,27 @@ header{
                         border-bottom: 2px solid black;
                     }
                 }
-                    
+            }
+            @include for-breakpoint(xxl){
+                margin-right: 1rem;
+            }
+            .nav-link{
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+
+                @include for-breakpoint(l){
+                    padding: 2px;
+                }
+                @include for-breakpoint(xxl){
+                     padding: 5px;
+                }
             }
         }
-    }       
-}
-@media screen and (min-width: map-get($breakpoints, 1200)) {
-    header {
-        .nav-link{
-            padding: 5px;
-        }
-        nav ul {
-            margin-right: 1rem;
-        }
+    }
+    @keyframes girar {
+        100%{
+            transform: rotateY(360deg);
+        }        
     }
 }

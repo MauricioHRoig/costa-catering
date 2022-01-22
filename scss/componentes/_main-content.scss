@@ -11,6 +11,18 @@
         font-family: 'Raleway', sans-serif;
         max-width: 35rem;
         text-align: center;
+
+        @include for-breakpoint(l){
+            max-width: 60rem;
+        }
+        @include for-breakpoint(xl){
+            padding-top: 20px;
+            max-width: 50rem;
+            text-align: left;
+        }
+        @include for-breakpoint(xxl){
+            max-width: 45rem;
+        }
     }
     .titulo{
         font-family: 'Dancing Script', cursive ;
@@ -22,9 +34,22 @@
         font-size: 20px;
         text-decoration: underline dotted black;
         align-self: center;
+
+        @include for-breakpoint(m){
+            padding: 15px 0px;
+            font-size: 25px;
+        }
+        @include for-breakpoint(l){
+            padding: 1.3rem 0;
+            font-size: 40px;
+        }
     }
     .width{
         width: auto;
+
+        @include for-breakpoint(xl){
+            width: 100%;
+        }
     }
     .column-mob{
         flex-direction: column;
@@ -41,9 +66,26 @@
         text-decoration: underline black;
         text-align: center;
         padding: 0.5rem 0 0.2rem 0;
+
+        @include  for-breakpoint(l){
+            padding-top: 1rem;
+            font-size: 30px;
+        }
+        @include  for-breakpoint(xl){
+            padding: 0rem;
+            text-align: left;
+        }
     }
     .p-especialidad{
         padding-top: 1rem;
+
+        @include for-breakpoint(l){
+            padding: 1rem 0rem 0rem 0rem;
+        }
+        @include for-breakpoint(xl){
+            padding: 2rem 2rem 0rem 0rem;
+            max-width: 60rem;
+        }
     }
     .center{
         text-align: center;
@@ -53,6 +95,15 @@
         display: flex;
         justify-content: center;
         border: double;
+
+        @include for-breakpoint(l){
+            justify-content: center;
+            margin: 0 5rem;
+        }
+        @include for-breakpoint(xl){
+            margin: 0 4rem;
+            padding: 0 1rem;
+        }
     }
     .fieldset-button-box{
         display: flex;
@@ -63,17 +114,31 @@
     .fieldset-button{
         font-size: 13px;
         margin-left: 0.5rem;
+
+        @include for-breakpoint(m){
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
     }
     .btn-primary:active{
         color: #fff;
         background-color: #42470e;
         border-color: #42470e;
     }
+    .btn-primary:focus {
+        background-color: #42470e;
+        border-color: #42470e;
+        box-shadow: 0 0 0 0.25rem rgba(247, 246, 245, 0.658);
+    }
     .form-contact{
         width: 80%;
     }
     .contact-imput{
         width: 9rem;
+
+        @include for-breakpoint(m){
+            width: 10rem;
+        }
     }
     .contact-form-label{
         padding-left: 0.5rem;
@@ -81,6 +146,16 @@
     .contact-textarea{
         height: 5rem;
         width: 9rem;
+
+        @include for-breakpoint(m){
+            width: 12rem;
+        }
+        @include for-breakpoint(l){
+            width: 26rem;
+        }
+        @include for-breakpoint(xl){
+            width: 44rem;
+        }
     }
     .mapa{
         display: flex;
@@ -103,15 +178,51 @@
         text-align: center; 
         margin: 0;
         padding-top: 1rem;
+
+        @include for-breakpoint(m){
+            margin: 0 2rem;;
+        }
+        @include for-breakpoint(l){
+            margin: 0 5rem;;
+        }
+        @include for-breakpoint(xl){
+            margin: 0 3rem;;
+        }
+        @include for-breakpoint(xxl){
+            margin: 0 5rem;;
+        }
     }
     /*      Galeria      */
     .carousel-width{
         width: 15rem;
         padding-top: 1rem;
+
+        @include for-breakpoint(m){
+            width: 20rem;
+        }
+        @include for-breakpoint(l){
+            width: 21rem;
+        }
+        @include for-breakpoint(xl){
+            width: 25rem;
+        }
     }
     .galery-img-scale {
         width: 15rem;
         height: 15rem;
+
+        @include for-breakpoint(m){
+            width: 20rem;
+            height: 20rem;
+        }
+        @include for-breakpoint(l){
+            width: 21rem;
+            height: 21rem;
+        }
+        @include for-breakpoint(xl){
+            width: 25rem;
+            height: 25rem;
+        }
     }
     .flex-column-center{
         display: flex;
@@ -129,152 +240,41 @@
         width: 15rem;
         height: 100%;
         padding: 0;
+
+        @include for-breakpoint(m){
+            width: 20rem;
+            padding: 0;
+        }
+        @include for-breakpoint(xxl){
+            height: 100%;
+        }
     }
     .col-promo{
         display: flex;
         justify-content: center;
         padding-right: 0rem;
+
+        @include for-breakpoint(xl){
+            justify-content: end;
+            padding-right: 2rem;
+        }
     }
     .row-promo{
-        padding: 0 0 1rem 0;
-    }
-    .jf-cont {
-        justify-content: center;
+        padding: 0 0 2rem 0;
     }
     .col-promo-txt {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
-@media screen and (min-width: map-get($breakpoints, 375)) {
-    .main-wrapper { 
-        h3 {
-            padding: 15px 0px;
-            font-size: 25px;
-        }
-         /*    Field set  */
-        .fieldset-button{
-            font-size: 16px;
-            margin-left: 0.5rem;
-        }
-        .contact-imput{
-            width: 10rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 12rem;
-        } 
-         /*      Servicios       */
-        .p-servicios {
-            margin: 0 2rem;;
-        }
-        /*      Galeria      */
-        .galery-img-scale {
-            width: 20rem;
-            height: 20rem;
-        }
-        .carousel-width {
-            width: 20rem;
-        }
-        /*      Promociones       */
-        .promo-img-scale {
-            width: 20rem;
-            padding: 0;
-        }
-    }
-}
-@media screen and (min-width: map-get($breakpoints, 768)) {
-    .main-wrapper {
-        .p-style{
-            max-width: 60rem;
-        }
-        h3 {
-            padding: 1.3rem 0;
-            font-size: 40px;
-        }
-        .header-style{
-            padding-top: 1rem;
-            font-size: 30px;
-        }
-        .p-especialidad{
-            padding: 1rem 0rem 0rem 0rem;
-        }
-        /*    Field set  */
-        .fieldset-contact{
-            justify-content: center;
-            margin: 0 5rem;
-        }
-        .fieldset-button{
-            font-size: 16px;
-            margin-left: 0.5rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 26rem;
-        }
-        /*      Servicios        */
-        .p-servicios {
-            margin: 0 5rem;;
-        }
-        /*      Galeria      */
-        .carousel-width {
-            width: 21rem;
-        }
-        .galery-img-scale{
-            width: 21rem;
-            height: 21rem;
-        }
-    }    
-}
-@media screen and (min-width: map-get($breakpoints, 1024)) {
-    .main-wrapper {
+    @include for-breakpoint(xl){
         .d-block-1024{
             display: block;
-        }
-        .width{
-            width: 100%;
         }
         .row-desk{
             flex-direction: row;
         }
-        .p-style{
-            padding-top: 20px;
-            max-width: 50rem;
-            text-align: left;
-        }
-        .header-style{
-            padding: 0rem;
-            text-align: left;
-        }
-        .p-especialidad{
-            padding: 2rem 2rem 0rem 0rem;
-            max-width: 60rem;
-        }
-        /*      FieldSet         */
-        .fieldset-contact{
-            margin: 0 4rem;
-            padding: 0 1rem ;
-        }
-        .contact-imput{
-            width: 10rem;
-        }
-        .contact-textarea{
-            height: 5rem;
-            width: 44rem;
-        }
-        /*      Servicios        */
-        .p-servicios {
-            margin: 0 3rem;;
-        }
-         /*      Galeria      */
-        .carousel-width {
-            width: 25rem;
-        }
-        .galery-img-scale{
-            width: 25rem;
-            height: 25rem;
-        }
+            /*      Galeria      */
         .d-block-row{
             display: block;
             flex-direction: row;
@@ -284,31 +284,6 @@
         }
         .ps-3{
             padding-left: 1rem !important;
-        }
-        /*      Promociones      */
-        .col-promo{
-            display: flex;
-            justify-content: end;
-            padding-right: 2rem;
-        }
-    }
-}
-@media screen and (min-width: map-get($breakpoints, 1200)) {
-    .main-wrapper {
-        .p-style{
-            max-width: 45rem;
-        }
-          /*      Servicios        */
-        .p-servicios {
-            margin: 0 5rem;;
-        }
-        /*      Promociones      */
-        .promo-img-scale {
-            width: 20rem;
-            height: 100%;
-        }
-        .row-promo{
-            padding: 0 0 1rem 0;
         }
     }
 }
