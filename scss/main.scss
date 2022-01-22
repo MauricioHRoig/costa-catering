@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Noto+Sans+TC:wght@100&family=Playball&family=Raleway:ital,wght@1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Noto+Sans+TC:wght@100&display=swap');
 /*      Scss      */
-@import "base/root";
-@import "base/variables";
-@import "componentes/main-wrapper.scss";
-@import "componentes/header.scss";
-@import "componentes/main-content.scss";
-@import "componentes/footer.scss";
+@import "base/_root";
+@import "base/_variables";
+@import "componentes/_queries.scss";
+@import "componentes/_main-wrapper.scss";
+@import "componentes/_header.scss";
+@import "componentes/_main-content.scss";
+@import "componentes/_footer.scss";
