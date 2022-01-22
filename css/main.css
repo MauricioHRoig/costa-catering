@@ -116,20 +116,22 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .main-wrapper .p-style {
+  .main-wrapper .p-nosotros-index {
+    text-align: center !important; }
+  .main-wrapper .p-style, .main-wrapper .p-nosotros-index {
     font-family: 'Raleway', sans-serif;
     max-width: 35rem;
     text-align: center; }
     @media screen and (min-width: 768px) {
-      .main-wrapper .p-style {
+      .main-wrapper .p-style, .main-wrapper .p-nosotros-index {
         max-width: 60rem; } }
     @media screen and (min-width: 1024px) {
-      .main-wrapper .p-style {
+      .main-wrapper .p-style, .main-wrapper .p-nosotros-index {
         padding-top: 20px;
         max-width: 50rem;
         text-align: left; } }
     @media screen and (min-width: 1200px) {
-      .main-wrapper .p-style {
+      .main-wrapper .p-style, .main-wrapper .p-nosotros-index {
         max-width: 45rem; } }
   .main-wrapper .titulo, .main-wrapper h3, .main-wrapper .header-style {
     font-family: 'Dancing Script', cursive; }
@@ -250,21 +252,23 @@ header {
     align-items: center;
     padding-bottom: 2rem; }
   .main-wrapper .p-servicios {
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: 0;
-    padding-top: 1rem; }
-    @media screen and (min-width: 375px) {
-      .main-wrapper .p-servicios {
-        margin: 0 2rem; } }
-    @media screen and (min-width: 768px) {
-      .main-wrapper .p-servicios {
-        margin: 0 5rem; } }
-    @media screen and (min-width: 1024px) {
-      .main-wrapper .p-servicios {
-        margin: 0 3rem; } }
-    @media screen and (min-width: 1200px) {
-      .main-wrapper .p-servicios {
-        margin: 0 5rem; } }
+    padding-top: 1rem;
+    width: 80%;
+    /* @include for-breakpoint(m){
+            margin: 0 2rem;;
+        }
+        @include for-breakpoint(l){
+            margin: 0 5rem;;
+        }
+        @include for-breakpoint(xl){
+            margin: 0 3rem;;
+        }
+        @include for-breakpoint(xxl){
+            margin: 0 5rem;;
+        } */ }
   .main-wrapper .carousel-width {
     width: 15rem;
     padding-top: 1rem; }
